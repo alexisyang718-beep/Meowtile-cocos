@@ -487,12 +487,12 @@ export class AppFlowController extends Component {
      * 调试模式 — 首页关卡按钮永远显示「关卡 1」。
      * 上线前置 false，让玩家从已通关的下一关开始。
      */
-    private static readonly HOME_DEBUG_FORCE_LEVEL_1 = true;
+    private static readonly HOME_DEBUG_FORCE_LEVEL_1 = false;
     private static readonly DEBUG_SHOW_FPS_OVERLAY = false;
     /** 正式关卡范围：1-320。 */
     private static readonly HOME_LEVEL_MAX = 320;
     /** v1.5.3：地图章节按 chapters.json 的 unlockAfterLevel 正常解锁；验收期保持全解锁。 */
-    private static readonly DEBUG_UNLOCK_ALL_CHAPTERS = true;
+    private static readonly DEBUG_UNLOCK_ALL_CHAPTERS = false;
 
     private async goHome(): Promise<void> {
         this.currentScene = 'home';

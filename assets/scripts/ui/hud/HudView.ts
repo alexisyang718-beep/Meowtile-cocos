@@ -22,7 +22,7 @@ const BOOSTER_ICON_NAMES: Record<BoosterType, string> = {
  * 调试用关卡下拉选择开关。上线前置 false。
  * true 时，点击 HUD 关卡文字打开关卡选择下拉，不再显示左右切关按钮。
  */
-const DEBUG_LEVEL_DROPDOWN = true;
+const DEBUG_LEVEL_DROPDOWN = false;
 /** 调试跳关上界（正式关卡 1-320） */
 const DEBUG_LEVEL_MAX = 320;
 
@@ -47,8 +47,6 @@ export interface HudHandlers {
     onBooster: (type: BoosterType) => void;
     /** 调试：从关卡下拉里跳到指定关卡（DEBUG_LEVEL_DROPDOWN=true 时使用） */
     onGotoLevel?: (levelId: number) => void;
-    /** 临时调试：一键通关，用于快速校对拼豆奖励表现 */
-    onDebugWin?: () => void;
     /** v1.5：点击设置齿轮（暂占位，弹"敬请期待"提示） */
     onSetting?: () => void;
 }
@@ -171,7 +169,6 @@ export class HudView extends Component {
         if (DEBUG_LEVEL_DROPDOWN) {
             this.bindEditableButton('Title', () => this.toggleLevelDropdown(), 0.94);
         }
-        this.ensureDebugWinButton(handlers);
 
         this.bindEditableButton('BackBtn', () => handlers.onBack(), 0.9);
         this.bindEditableButton('SettingBtn', () => handlers.onSetting ? handlers.onSetting() : this.showToast('设置功能敬请期待'), 0.9);
@@ -218,23 +215,6 @@ export class HudView extends Component {
             bindPressScale(titleNode, 0.94);
             titleNode.on(Node.EventType.TOUCH_END, () => this.toggleLevelDropdown());
         }
-        this.ensureDebugWinButton(handlers);
-    }
-
-    private ensureDebugWinButton(handlers: HudHandlers): void {
-        const titleY = this.titleLabel?.node.position.y ?? ScreenAdapter.topY(UI_LAYOUT.hud.topBar.topInset);
-        const existing = this.node.getChildByName('DebugWinButton');
-        const button = existing ?? createNode(this.node, 'DebugWinButton', 238, titleY, 146, 58);
-        drawRect(button, 146, 58, colorFromHex('#FF9E3D', 235), colorFromHex('#FFFFFF', 190), 3, 20);
-        let component = button.getComponent(Button);
-        if (!component) component = button.addComponent(Button);
-        component.interactable = true;
-        button.off(Node.EventType.TOUCH_END);
-        if (!existing) {
-            createLabel(button, 'Label', '一键通关', 0, 0, 22, colorFromHex('#FFFFFF'), 132, 50).fontFamily = HUD_FONT_FAMILY;
-            bindPressScale(button, 0.92);
-        }
-        button.on(Node.EventType.TOUCH_END, () => handlers.onDebugWin?.());
     }
 
     /** HUD 顶部图片按钮（返回 / 设置等） */

@@ -913,7 +913,6 @@ export class LevelFlowController extends Component {
             onTileDebugSelect: (tileId) => this.selectTile(tileId),
             onBooster: (type) => this.useBooster(type),
             onGotoLevel: (levelId) => { void this.startLevel(Math.max(1, levelId)); },
-            onDebugWin: () => { this.finishLevel(true); },
             onSetting: () => director.emit(EventKeys.AppOpenSettings),
         });
 
@@ -1039,7 +1038,6 @@ export class LevelFlowController extends Component {
             onTileDebugSelect: (tileId) => this.selectTile(tileId),
             onBooster: (type) => this.useBooster(type),
             onGotoLevel: (levelId) => { void this.startLevel(Math.max(1, levelId)); },
-            onDebugWin: () => { this.finishLevel(true); },
             onSetting: () => director.emit(EventKeys.AppOpenSettings),
         });
 

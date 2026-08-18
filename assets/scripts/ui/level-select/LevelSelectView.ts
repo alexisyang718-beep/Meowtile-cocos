@@ -330,12 +330,13 @@ export class LevelSelectView extends Component {
         const thumbGap = Math.round(cfg.thumbnailGap * thumbScale);
         const thumbStartX = -((thumbCount - 1) * (thumbW + thumbGap)) / 2;
         const thumbY = cardH * cfg.thumbnailYRatio;
+        const playableMaxLevel = Math.max(range[0], info.clearedMaxLevel + 1);
         for (let i = 0; i < thumbCount; i += 1) {
             const tx = thumbStartX + i * (thumbW + thumbGap);
             const targetLevel = range[0] + i * groupSize;
             const thumbPath = thumbIds[i % thumbIds.length];
-            // 调试期：所有缩略图常驻可点（不带锁），方便逐关验难度。
-            this.buildThumbnail(card, tx, thumbY, thumbW, thumbH, thumbPath, targetLevel, false, info.chapter.id);
+            const locked = info.locked || targetLevel > playableMaxLevel;
+            this.buildThumbnail(card, tx, thumbY, thumbW, thumbH, thumbPath, targetLevel, locked, info.chapter.id);
         }
 
         if (!info.locked) {
