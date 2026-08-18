@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>棋盘形状母版确认</title>
+  <style>
+    :root{--bg:#f5f5f7;--card:#fff;--ink:#1d1d1f;--sub:#6e6e73;--line:#8b6f5a;--tile:#f7e1c6;}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;color:var(--ink);padding:20px}h1{font-size:24px;margin:0 0 8px}p{margin:0 0 14px;color:var(--sub);font-size:13px;line-height:1.6}.toolbar{position:sticky;top:0;z-index:10;background:#f5f5f7dd;backdrop-filter:blur(12px);padding:10px 0 14px;border-bottom:1px solid #d2d2d7}.nav{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.nav a{font-size:12px;color:#1d1d1f;text-decoration:none;background:#fff;border:1px solid #ddd;border-radius:999px;padding:5px 9px}.section{margin-top:22px}.section h2{font-size:18px;margin:0 0 10px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}.card{background:var(--card);border:1px solid #ddd;border-radius:16px;padding:12px;box-shadow:0 8px 24px #0001}.title{font-weight:800;font-size:14px;margin-bottom:3px}.meta{font-size:11px;color:var(--sub);line-height:1.45;margin-bottom:8px}.svgbox{background:#e5e5ea;border-radius:12px;padding:10px;overflow:hidden}svg{width:100%;height:260px;display:block}.board{fill:#ececef;stroke:#d1d1d6;stroke-width:2}.ribbon{fill:none;stroke:var(--line);stroke-width:20;stroke-linecap:round;stroke-linejoin:round}.ribbon.thin{stroke-width:15}.ghost{fill:none;stroke:#8b6f5a66;stroke-width:2;stroke-dasharray:5 5}.ref{margin-top:10px;border-top:1px solid #eee;padding-top:10px}.ref img{width:100%;max-height:210px;object-fit:cover;border-radius:10px;border:1px solid #ddd;background:#eee}.legend{display:flex;gap:12px;align-items:center;font-size:12px;color:var(--sub);margin-top:8px}.swatch{width:18px;height:10px;border-radius:999px;background:var(--tile);border:1px solid var(--line)}
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <h1>棋盘形状母版确认</h1>
+    <p>已按“竖向长方形棋盘”重画；`N` 和 `Z` 已拆成两个；斜蝴蝶结已移除。此页只确认轮廓母版，不做最终关卡、花色或开局校验。</p>
+    <div class="legend"><span class="swatch"></span><span>粗线表示可铺 tile 的连续带；后续再离散成 36-60 tiles 的高度图。</span></div>
+    <div class="nav" id="nav"></div>
+  </div>
+  <main id="app"></main>
+<script>
+const refBase='../../../../tile关卡研究/棋盘/形状/';
+const groups=[
+  {title:'这次新增/更新的参考形状',items:[
+    {id:'a_shape',name:'A 型',meta:'尖顶 A 字，左右斜腿 + 中横梁，适合竖向棋盘。',ref:'A.jpg',segs:[[[42,205],[90,36],[138,205]],[[62,142],[118,142]],[[72,110],[90,58],[108,110]]]},
+    {id:'h_shape',name:'H 型 / 双柱桥',meta:'左右两根竖柱，中间一条桥；区别于工字。',ref:'H.jpg',segs:[[[42,38],[42,205]],[[138,38],[138,205]],[[42,122],[138,122]]]},
+    {id:'up_down_keys',name:'上下键',meta:'上下两个分离方向键：箭头头部 + 短柄，中间留明显空隙。',ref:'上下键.jpg',segs:[[[90,38],[48,88],[72,88],[72,114],[108,114],[108,88],[132,88],[90,38]],[[90,202],[48,152],[72,152],[72,126],[108,126],[108,152],[132,152],[90,202]]]},
+    {id:'top_bottom_cluster',name:'上小下三组合',meta:'上方小图案，下方三个并列块，整体上下分离。',ref:'上小下三组合.jpg',segs:[[[70,42],[110,42],[110,82],[70,82],[70,42]],[[28,156],[62,156],[62,205],[28,205],[28,156]],[[73,150],[107,150],[107,205],[73,205],[73,150]],[[118,156],[152,156],[152,205],[118,205],[118,156]]]},
+    {id:'notch_tab',name:'凹凸口',meta:'左边凹口，右边凸口，两个模块互补但中间分离。',ref:'凹凸.jpg',segs:[[[38,46],[98,46],[98,92],[72,92],[72,148],[98,148],[98,194],[38,194],[38,46]],[[132,54],[132,102],[154,102],[154,138],[132,138],[132,186],[92,186],[92,54],[132,54]]]},
+    {id:'two_bridge',name:'双桥',meta:'左右两柱，中间上下两条桥；比 H 更像两条平行桥。',ref:'双桥.jpg',segs:[[[42,36],[42,206]],[[138,36],[138,206]],[[42,95],[138,95]],[[42,148],[138,148]]]},
+    {id:'corners_center',name:'四角配中图',meta:'四个角各一组，中间独立小图案。',ref:'四角配中图.jpg',segs:[[[36,45],[62,45],[62,75],[36,75],[36,45]],[[118,45],[144,45],[144,75],[118,75],[118,45]],[[36,165],[62,165],[62,195],[36,195],[36,165]],[[118,165],[144,165],[144,195],[118,195],[118,165]],[[76,104],[104,104],[104,136],[76,136],[76,104]]]},
+    {id:'tree_shape',name:'树 / 上中下三峰',meta:'从上到下三个逐渐变宽的 V / 山峰，底部可接一条短干。',ref:'树.jpg',segs:[[[90,42],[44,92],[136,92]],[[90,86],[34,145],[146,145]],[[90,136],[48,190],[132,190]],[[90,190],[90,215]]]},
+    {id:'fishbone',name:'鱼骨 / 多层 V',meta:'多段 V 形脊骨向下排列，适合做轻量层级结构。',ref:'鱼骨.jpg',segs:[[[90,36],[40,92],[140,92]],[[90,92],[48,148],[132,148]],[[90,148],[58,202],[122,202]]]},
+    {id:'horizontal_keys',name:'左右键',meta:'左右两个分离方向键：箭头头部 + 短柄，中心留缝。',ref:'左右键.jpg',segs:[[[34,120],[78,74],[78,102],[100,102],[100,138],[78,138],[78,166],[34,120]],[[146,120],[102,74],[102,102],[80,102],[80,138],[102,138],[102,166],[146,120]]]},
+  ]},
+  {title:'参考图拆分后的基础字母/符号形状',items:[
+    {id:'mountain',name:'山 / 三峰',meta:'三条竖峰，下方或中部横向连接；竖屏里更像三根柱状峰。',ref:'山.jpg',segs:[[[45,200],[45,78]],[[90,200],[90,42]],[[135,200],[135,78]],[[35,200],[145,200]],[[55,132],[125,132]]]},
+    {id:'m_shape',name:'M 型',meta:'两侧竖带 + 中间向下折线，保持高竖向比例。',ref:'M.jpg',segs:[[[38,204],[38,52]],[[38,52],[90,132]],[[90,132],[142,52]],[[142,52],[142,204]]]},
+    {id:'n_shape',name:'N 型',meta:'左竖 + 斜桥 + 右竖，和 Z 分开。',ref:'N和Z.jpg',segs:[[[42,204],[42,52]],[[42,52],[138,204]],[[138,204],[138,52]]]},
+    {id:'z_shape',name:'Z 型',meta:'上横 + 斜桥 + 下横，和 N 分开。',ref:'N和Z.jpg',segs:[[[40,58],[140,58]],[[140,58],[40,198]],[[40,198],[140,198]]]},
+    {id:'s_shape',name:'S 型',meta:'上横、左竖、中横、右竖、下横，按竖屏拉高。',ref:'S.jpg',segs:[[[132,48],[52,48],[52,100],[128,100],[128,154],[48,154],[48,204]]]},
+    {id:'v_shape',name:'V 字型',meta:'上宽下尖，底部汇合。',ref:'V.jpg',segs:[[[38,54],[90,204],[142,54]],[[58,54],[122,54]]]},
+    {id:'infinity',name:'无限符号',meta:'左右两个横向环在中间交叉，不是口字或普通蝴蝶结。',ref:'无限.jpg',segs:[[[24,120],[42,78],[70,72],[92,120],[70,168],[42,162],[24,120]],[[156,120],[138,78],[110,72],[88,120],[110,168],[138,162],[156,120]],[[68,78],[112,162]],[[68,162],[112,78]]]},
+    {id:'bowtie',name:'蝴蝶结 / 双三角',meta:'保留非斜版本：左右两个三角，中间小结。',ref:'蝴蝶结1.jpg',segs:[[[32,70],[82,120],[32,170],[32,70]],[[148,70],[98,120],[148,170],[148,70]],[[78,106],[102,106],[102,134],[78,134],[78,106]]]},
+  ]},
+  {title:'前面讨论过的通用形状',items:[
+    {id:'i_beam',name:'工字型',meta:'上横 + 中竖 + 下横。',segs:[[[38,52],[142,52]],[[90,52],[90,198]],[[38,198],[142,198]]]},
+    {id:'ring',name:'口字型 / 回字',meta:'四边框，中心洞明确保留。',segs:[[[42,48],[138,48],[138,198],[42,198],[42,48]]]},
+    {id:'zhong',name:'中字型',meta:'口字框 + 中竖/中横。',segs:[[[42,48],[138,48],[138,198],[42,198],[42,48]],[[90,48],[90,198]],[[42,123],[138,123]]]},
+    {id:'cross',name:'十字形',meta:'竖横交叉，适合简单关卡。',segs:[[[90,42],[90,204]],[[42,123],[138,123]]]},
+    {id:'u_shape',name:'U 型',meta:'两侧竖带 + 底部横带，顶部开口。',segs:[[[45,52],[45,198],[135,198],[135,52]]]},
+    {id:'hourglass',name:'沙漏',meta:'上宽下宽，中间收窄。',segs:[[[42,52],[138,52],[90,123],[42,198],[138,198]],[[90,123],[138,52]],[[90,123],[138,198]]]},
+    {id:'double_arch',name:'双拱',meta:'左右两个竖向拱/门洞并列。',segs:[[[38,198],[38,86],[64,58],[84,86],[84,198]],[[96,198],[96,86],[122,58],[142,86],[142,198]],[[38,198],[84,198]],[[96,198],[142,198]]]},
+    {id:'one_bridge',name:'一条桥',meta:'两边各一条竖边，中间一条横线相连。',segs:[[[42,58],[42,190]],[[138,58],[138,190]],[[42,122],[138,122]]]},
+  ]}
+];
+function path(points){return 'M '+points.map(p=>p.join(' ')).join(' L ')}
+function card(item){
+  const segs=item.segs.map(s=>`<path class="ribbon" d="${path(s)}"/>`).join('');
+  const ref=item.ref?`<div class="ref"><div class="meta">参考图：${item.ref}</div><img src="${refBase+encodeURIComponent(item.ref)}" /></div>`:'';
+  return `<article class="card" id="${item.id}"><div class="title">${item.name}</div><div class="meta">${item.meta}</div><div class="svgbox"><svg viewBox="0 0 180 240" role="img" aria-label="${item.name}"><rect class="board" x="16" y="20" width="148" height="204" rx="14"/>${segs}</svg></div>${ref}</article>`
+}
+const app=document.getElementById('app');
+const nav=document.getElementById('nav');
+app.innerHTML=groups.map(g=>`<section class="section"><h2>${g.title}</h2><div class="grid">${g.items.map(card).join('')}</div></section>`).join('');
+nav.innerHTML=groups.flatMap(g=>g.items).map(i=>`<a href="#${i.id}">${i.name}</a>`).join('');
+</script>
+</body>
+</html>

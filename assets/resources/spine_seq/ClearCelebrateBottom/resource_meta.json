@@ -1,0 +1,30 @@
+{
+  "index": 5,
+  "name": "ClearCelebrateBottom",
+  "id": "ClearCelebrateBottom",
+  "skel": "ClearCelebrateBottom/ClearCelebrateBottom.skel",
+  "atlas": "ClearCelebrateBottom/ClearCelebrateBottom.atlas",
+  "bounds": {
+    "h": 593.2101377665803,
+    "w": 402.00000876992914,
+    "x": -120.34792114975102,
+    "y": -660.5068647506195
+  },
+  "width": 600,
+  "height": 600,
+  "bones": 10,
+  "slots": 3,
+  "skins": 1,
+  "animations": [
+    {
+      "name": "Celebration",
+      "duration": 2.3000001907348633,
+      "fps": 12,
+      "frames": 28,
+      "frameDuration": 0.08333333333333333,
+      "originalFrameTime": 0.08214286395481654,
+      "width": 600,
+      "height": 600
+    }
+  ]
+}

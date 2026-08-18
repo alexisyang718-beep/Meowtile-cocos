@@ -1,0 +1,69 @@
+{
+  "id": "gene_symmetry_diagonal_square_demo",
+  "name": "正方形对角对称展示",
+  "stage": "workbench_showcase",
+  "gridSize": "7x7",
+  "seedStart": 7000,
+  "excludeSeeds": [
+    7001,
+    7010,
+    7019,
+    7028,
+    7003,
+    7013
+  ],
+  "heightWeights": {
+    "h1": 0.58,
+    "h2": 0.32,
+    "h3": 0.1
+  },
+  "mechanicBlacklist": [
+    "piggy",
+    "conveyor",
+    "dropChute",
+    "skyscraper",
+    "cover"
+  ],
+  "allowedMechanics": [],
+  "iconPoolSize": 8,
+  "redundancyK": 1.18,
+  "interferencePattern": "shape_showcase",
+  "shapeVariants": [
+    "mountain",
+    "u_shape",
+    "ring",
+    "double_arch",
+    "hourglass",
+    "four_corners"
+  ],
+  "symmetryModes": [
+    "diag"
+  ],
+  "breathingCorridor": {
+    "type": "diagonal_demo",
+    "width": 1,
+    "strength": 0.8
+  },
+  "openingFlow": {
+    "immediateMatches": [
+      2,
+      3
+    ],
+    "candidatePairs": [
+      4,
+      7
+    ],
+    "firstStepsChain": 4,
+    "softGatesAfterGroups": [
+      4,
+      9
+    ]
+  },
+  "validatorThresholds": {
+    "dfsDepthLimit": 18,
+    "minOpeningMatches": 2,
+    "maxOpeningMatches": 3,
+    "minBranchingFactor": 2.0,
+    "maxBottleneckDepth": 4
+  }
+}

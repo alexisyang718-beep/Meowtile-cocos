@@ -1,0 +1,82 @@
+[
+  {
+    "id": "chapter1",
+    "name": "窗边出发",
+    "landmarkName": "窗边出发",
+    "description": "小猫坐在窗边，旁边有旅行包和阳光。",
+    "backgroundImage": "newtheme/bg/chapter1/1",
+    "mapThumbnail": "newtheme/bg/chapter1/1",
+    "flagEmoji": "🐱",
+    "levelRange": [
+      1,
+      12
+    ],
+    "unlockAfterLevel": null,
+    "order": 1,
+    "transitionBackground": "newtheme/bg/chapter1/1"
+  },
+  {
+    "id": "chapter2",
+    "name": "猫咖停留",
+    "landmarkName": "猫咖停留",
+    "description": "小猫趴在猫咖桌边，旁边是咖啡杯和鱼干。",
+    "backgroundImage": "newtheme/bg/chapter2/1",
+    "mapThumbnail": "newtheme/bg/chapter2/1",
+    "flagEmoji": "☕",
+    "levelRange": [
+      13,
+      80
+    ],
+    "unlockAfterLevel": 12,
+    "order": 2,
+    "transitionBackground": "newtheme/bg/chapter2/1"
+  },
+  {
+    "id": "chapter3",
+    "name": "雨后街角",
+    "landmarkName": "雨后街角",
+    "description": "小猫站在雨后街角，旁边有小伞、便利店和花店。",
+    "backgroundImage": "newtheme/bg/chapter3/1",
+    "mapThumbnail": "newtheme/bg/chapter3/1",
+    "flagEmoji": "🌧️",
+    "levelRange": [
+      81,
+      160
+    ],
+    "unlockAfterLevel": 80,
+    "order": 3,
+    "transitionBackground": "newtheme/bg/chapter3/1"
+  },
+  {
+    "id": "chapter4",
+    "name": "海边旅行",
+    "landmarkName": "海边旅行",
+    "description": "小猫坐在海边，看向夕阳、小船和远处码头。",
+    "backgroundImage": "newtheme/bg/chapter4/1",
+    "mapThumbnail": "newtheme/bg/chapter4/1",
+    "flagEmoji": "🌊",
+    "levelRange": [
+      161,
+      240
+    ],
+    "unlockAfterLevel": 160,
+    "order": 4,
+    "transitionBackground": "newtheme/bg/chapter4/1"
+  },
+  {
+    "id": "chapter5",
+    "name": "雨巷暖光",
+    "landmarkName": "雨巷暖光",
+    "description": "雨巷里的小猫，从躲雨到找到温暖。",
+    "backgroundImage": "newtheme/bg/chapter5/1",
+    "mapThumbnail": "newtheme/bg/chapter5/1",
+    "flagEmoji": "☔",
+    "levelRange": [
+      241,
+      320
+    ],
+    "unlockAfterLevel": 240,
+    "order": 5,
+    "transitionBackground": "newtheme/bg/chapter5/1"
+  }
+]

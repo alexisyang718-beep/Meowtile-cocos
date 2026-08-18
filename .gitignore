@@ -1,0 +1,95 @@
+library/
+temp/
+local/
+build/
+profiles/
+native/*
+!native/engine/
+native/engine/*
+!native/engine/android/
+native/engine/android/*
+!native/engine/android/build.gradle
+!native/engine/android/CMakeLists.txt
+!native/engine/android/app/
+native/engine/android/app/*
+!native/engine/android/app/build.gradle
+!native/engine/android/app/AndroidManifest.xml
+!native/engine/android/app/proguard-rules.pro
+!native/engine/android/app/src/
+native/engine/android/app/src/*
+!native/engine/android/app/src/com/
+native/engine/android/app/src/com/*
+!native/engine/android/app/src/com/cocos/
+native/engine/android/app/src/com/cocos/*
+!native/engine/android/app/src/com/cocos/game/
+native/engine/android/app/src/com/cocos/game/*
+!native/engine/android/app/src/com/cocos/game/AppActivity.java
+!native/engine/android/res/
+native/engine/android/res/*
+!native/engine/android/res/mipmap-mdpi/
+native/engine/android/res/mipmap-mdpi/*
+!native/engine/android/res/mipmap-mdpi/ic_launcher.png
+!native/engine/android/res/mipmap-hdpi/
+native/engine/android/res/mipmap-hdpi/*
+!native/engine/android/res/mipmap-hdpi/ic_launcher.png
+!native/engine/android/res/mipmap-xhdpi/
+native/engine/android/res/mipmap-xhdpi/*
+!native/engine/android/res/mipmap-xhdpi/ic_launcher.png
+!native/engine/android/res/mipmap-xxhdpi/
+native/engine/android/res/mipmap-xxhdpi/*
+!native/engine/android/res/mipmap-xxhdpi/ic_launcher.png
+!native/engine/android/res/mipmap-xxxhdpi/
+native/engine/android/res/mipmap-xxxhdpi/*
+!native/engine/android/res/mipmap-xxxhdpi/ic_launcher.png
+!native/engine/android/res/values/
+native/engine/android/res/values/*
+!native/engine/android/res/values/strings.xml
+*.apk
+node_modules/
+.DS_Store
+__MACOSX/
+*.log
+.playwright-cli/
+preview-*.png
+assets/resources/art/bg/levelbg_contact.jpg*
+assets/resources/art/bg/levelbg_france_50_v2.png*
+
+.workbuddy/
+
+# 临时候选/本地 TODO (不推送)
+assets/resources/art/booster_candidates/
+assets/resources/art/booster_candidates.meta
+todo.md
+
+# Spine PNG 序列帧
+# (2026-05-29 瘦身: 633MB → 38MB, 14 个资源 14 条动画, 已入 git)
+# 旧规则: assets/resources/spine_seq/ 整目录排除, 已废弃
+
+# 工具临时输出（图集切图临时目录，不入仓）
+assets/scripts/tools/_atlas_out/
+backup/
+
+# v7.11: 大体积参考图，本地分析用，不入仓
+docs/board_refs/
+
+# Cocos 服务配置（本地生成，每个开发者不同）
+settings/v2/packages/cocos-service.json
+
+# 关卡生成脚本的备份文件（脚本运行时自动生成）
+assets/resources/config/game/chapters.json.bak
+assets/resources/config/game/chapters.json.bak.meta
+
+# 关卡 JSON 自动备份（apply_board_edit.py 每次运行生成）
+assets/resources/config/levels/*.json.bak
+assets/resources/config/levels/*.json.bak.meta
+
+# Excel/Office 编辑时的临时锁文件
+~$*.xlsx
+~$*.xls
+*.bak2
+*.bak2.meta
+*.bak3
+*.bak3.meta
+.codebuddy/
+*.bak4
+*.bak4.meta

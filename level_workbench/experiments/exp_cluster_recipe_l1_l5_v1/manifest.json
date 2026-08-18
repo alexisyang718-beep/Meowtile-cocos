@@ -1,0 +1,57 @@
+{
+  "id": "exp_cluster_recipe_l1_l5_v1",
+  "createdAt": "2026-07-07T10:08:58.617155",
+  "purpose": "Try cluster-driven board recipes for levels 1-5: base shape defines silhouette, upper clusters define coverage path and attention points.",
+  "recipes": [
+    [
+      1,
+      "cluster_soft_arch_intro",
+      7,
+      6,
+      2,
+      24,
+      5.7,
+      4.76
+    ],
+    [
+      2,
+      "cluster_gentle_gate_intro",
+      7,
+      6,
+      2,
+      30,
+      5.7,
+      3.82
+    ],
+    [
+      3,
+      "cluster_small_arch_intro",
+      7,
+      6,
+      3,
+      36,
+      5.7,
+      5.7
+    ],
+    [
+      4,
+      "cluster_double_column_intro",
+      7,
+      6,
+      3,
+      42,
+      5.7,
+      5.7
+    ],
+    [
+      5,
+      "cluster_three_peak_entry",
+      7,
+      6,
+      4,
+      54,
+      5.7,
+      6.64
+    ]
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  { "id": "apple",         "name": "苹果",     "icon": "🍎", "iconAsset": "art/tile/apple",         "color": "#F25555" },
+  { "id": "cherry",        "name": "樱桃",     "icon": "🍒", "iconAsset": "art/tile/cherry",        "color": "#E94558" },
+  { "id": "lemon",         "name": "柠檬",     "icon": "🍋", "iconAsset": "art/tile/lemon",         "color": "#F6D72D" },
+  { "id": "watermelon",    "name": "西瓜",     "icon": "🍉", "iconAsset": "art/tile/watermelon",    "color": "#FF6E6E" },
+  { "id": "kiwi",          "name": "猕猴桃",   "icon": "🥝", "iconAsset": "art/tile/kiwi",          "color": "#69A84F" },
+  { "id": "peach",         "name": "桃子",     "icon": "🍑", "iconAsset": "art/tile/peach",         "color": "#FFAFA0" },
+  { "id": "flower_pink",   "name": "粉花",     "icon": "🌸", "iconAsset": "art/tile/flower_pink",   "color": "#F8B7C8" },
+  { "id": "flower_yellow", "name": "万寿菊",   "icon": "🌼", "iconAsset": "art/tile/flower_yellow", "color": "#FFB833" },
+  { "id": "iris",          "name": "紫鸢尾",   "icon": "🪻", "iconAsset": "art/tile/iris",          "color": "#9B5DE5" },
+  { "id": "leaf",          "name": "银杏叶",   "icon": "🍃", "iconAsset": "art/tile/leaf",          "color": "#9CD66D" },
+  { "id": "ice",           "name": "冰块",     "icon": "🧊", "iconAsset": "art/tile/ice",           "color": "#A0E4FF" },
+  { "id": "bolt",          "name": "雷电",     "icon": "⚡", "iconAsset": "art/tile/bolt",          "color": "#F4C542" },
+
+  { "id": "grape",         "name": "葡萄",       "icon": "🍇", "iconAsset": "art/tile/grape",         "color": "#8B5CF6" },
+  { "id": "carrot",        "name": "胡萝卜",     "icon": "🥕", "iconAsset": "art/tile/carrot",        "color": "#F68A32" },
+  { "id": "fire",          "name": "火",         "icon": "🔥", "iconAsset": "art/tile/fire",          "color": "#FFCC4D" },
+
+  { "id": "battery_blue",  "name": "蓝电池",     "icon": "🔋", "iconAsset": "art/tile/battery_blue",  "color": "#3D7DE6" },
+  { "id": "chili",         "name": "辣椒",       "icon": "🌶️", "iconAsset": "art/tile/chili",         "color": "#E84845" },
+  { "id": "eggplant",      "name": "茄子",       "icon": "🍆", "iconAsset": "art/tile/eggplant",      "color": "#7B4FA0" },
+  { "id": "flower_orange", "name": "橙花",       "icon": "🌻", "iconAsset": "art/tile/flower_orange", "color": "#F68A32" },
+  { "id": "flower_purple", "name": "紫花",       "icon": "🪷", "iconAsset": "art/tile/flower_purple", "color": "#B57BD9" },
+  { "id": "gem_purple",    "name": "紫宝石",     "icon": "💎", "iconAsset": "art/tile/gem_purple",    "color": "#9B5DE5" },
+  { "id": "ginkgo",        "name": "银杏",       "icon": "🍂", "iconAsset": "art/tile/ginkgo",        "color": "#E0B143" },
+  { "id": "kettle",        "name": "水壶",       "icon": "🫖", "iconAsset": "art/tile/kettle",        "color": "#7AB87A" },
+  { "id": "kiwi_half",     "name": "半个猕猴桃", "icon": "🥝", "iconAsset": "art/tile/kiwi_half",     "color": "#9CD66D" },
+  { "id": "leaf_green",    "name": "绿叶",       "icon": "🍀", "iconAsset": "art/tile/leaf_green",    "color": "#5BAE5B" },
+  { "id": "mango",         "name": "芒果",       "icon": "🥭", "iconAsset": "art/tile/mango",         "color": "#FFB833" },
+  { "id": "mangosteen",    "name": "山竹",       "icon": "🟣", "iconAsset": "art/tile/mangosteen",    "color": "#6B3FA0" },
+  { "id": "snowflake",     "name": "雪花",       "icon": "❄️", "iconAsset": "art/tile/snowflake",     "color": "#A0E4FF" },
+
+  { "id": "golden",        "name": "金色",       "icon": "⭐", "iconAsset": "art/tile/star", "color": "#FFD54F" }
+]

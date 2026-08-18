@@ -1,0 +1,12 @@
+{
+  "id": "prepend20_test_levels_v1",
+  "snapshot": "20260706_201430_before_prepend20",
+  "createdAt": "2026-07-06T20:14:31.175339",
+  "purpose": "Prepend 20 test levels for fast Cocos playtesting while preserving the previous 1-320 levels shifted to 21-340 and in snapshot.",
+  "testLevels": [
+    1,
+    20
+  ],
+  "originalLevelsShiftedBy": 20,
+  "restoreHint": "Restore files from this snapshot to return to the pre-prepend state."
+}

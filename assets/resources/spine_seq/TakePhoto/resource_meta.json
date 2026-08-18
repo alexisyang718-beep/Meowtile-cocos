@@ -1,0 +1,30 @@
+{
+  "index": 50,
+  "name": "TakePhoto",
+  "id": "TakePhoto",
+  "skel": "TakePhoto/TakePhoto.skel",
+  "atlas": "TakePhoto/TakePhoto.atlas",
+  "bounds": {
+    "h": 472.9145507812498,
+    "w": 398.0000174966479,
+    "x": -199.00000874832395,
+    "y": -284.4145507812499
+  },
+  "width": 600,
+  "height": 600,
+  "bones": 5,
+  "slots": 4,
+  "skins": 1,
+  "animations": [
+    {
+      "name": "Appera",
+      "duration": 1.3333333730697632,
+      "fps": 12,
+      "frames": 17,
+      "frameDuration": 0.08333333333333333,
+      "originalFrameTime": 0.07843137488645666,
+      "width": 600,
+      "height": 600
+    }
+  ]
+}

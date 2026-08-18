@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "description": "普通棋盘图案数量与层级分布规则。目标是减少视觉重复，并用层级分布控制难度。",
+  "rules": {
+    "maxTilesPerPattern": 6,
+    "maxTriplesPerPattern": 2,
+    "countUnit": 3,
+    "patternKinds": "优先让每个图案只出现一组三张；当关卡三消组数超过可用图案素材数时，才允许少量图案出现第二组三张。",
+    "currentAvailablePatterns": 28,
+    "layerDistribution": {
+      "oneTriple": "一组三张可按 3、2+1、1+1+1 分布；越分散越难。",
+      "twoTriplesEarly": "同一图案 6 个时，早期优先按 3+3 分布，让两组三消分别落在不同层。",
+      "twoTriplesMid": "中期可按 3+2+1 分布，拆散其中一组三消，提高寻找成本。",
+      "twoTriplesLate": "层数更多时，按 2+2+1+1 或 2+1+1+1+1 分散，让同图案跨更多层，增加难度。"
+    },
+    "runtimeShuffle": "禁止运行时无约束随机重洗 type；关卡 JSON 中的层级分布即为最终分布。"
+  },
+  "validation": {
+    "eachPatternCountMultipleOf": 3,
+    "eachPatternCountMax": 6,
+    "sixTilesPatternMustUseAtLeastLayers": 2,
+    "levelTileCountMultipleOf": 3
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "id": 3,
+  "name": "第3关 · 双层钻石",
+  "difficulty": 1,
+  "chapterId": "chapter1",
+  "background": "newtheme/bg/chapter1/1",
+  "slotCapacity": 7,
+  "allowedBoosters": [
+    "hint",
+    "shuffle",
+    "undo"
+  ],
+  "boosters": {
+    "unlocked": [
+      "hint",
+      "shuffle",
+      "undo"
+    ],
+    "grantTo": {
+      "hint": 2,
+      "shuffle": 1,
+      "undo": 2
+    }
+  },
+  "goal": {
+    "type": "clearAll"
+  },
+  "tileBase": "newtheme/tile_base_pink",
+  "subchapterId": "ch1_01",
+  "randomizeTypes": true,
+  "rows": 6,
+  "cols": 5,
+  "layers": 2,
+  "masked": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      5,
+      4
+    ]
+  ],
+  "stackProfile": {
+    "maxLayers": 2,
+    "shape": "irregular",
+    "tileCountHint": 18
+  },
+  "tiles": [
+    {
+      "id": "L003_T001",
+      "type": "flower_pink",
+      "row": 0,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L003_T002",
+      "type": "flower_pink",
+      "row": 1,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L003_T003",
+      "type": "flower_pink",
+      "row": 1,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L003_T004",
+      "type": "leaf",
+      "row": 1,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L003_T005",
+      "type": "leaf",
+      "row": 2,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L003_T006",
+      "type": "leaf",
+      "row": 2,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L003_T007",
+      "type": "bolt",
+      "row": 2,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L003_T008",
+      "type": "bolt",
+      "row": 2,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L003_T009",
+      "type": "bolt",
+      "row": 3,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L003_T010",
+      "type": "ice",
+      "row": 3,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L003_T011",
+      "type": "ice",
+      "row": 3,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L003_T012",
+      "type": "ice",
+      "row": 4,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L003_T013",
+      "type": "carrot",
+      "row": 2,
+      "col": 2,
+      "layer": 1
+    },
+    {
+      "id": "L003_T014",
+      "type": "carrot",
+      "row": 3,
+      "col": 0,
+      "layer": 1
+    },
+    {
+      "id": "L003_T015",
+      "type": "carrot",
+      "row": 3,
+      "col": 4,
+      "layer": 1
+    },
+    {
+      "id": "L003_T016",
+      "type": "apple",
+      "row": 4,
+      "col": 1,
+      "layer": 1
+    },
+    {
+      "id": "L003_T017",
+      "type": "apple",
+      "row": 4,
+      "col": 3,
+      "layer": 1
+    },
+    {
+      "id": "L003_T018",
+      "type": "apple",
+      "row": 5,
+      "col": 2,
+      "layer": 1
+    }
+  ]
+}

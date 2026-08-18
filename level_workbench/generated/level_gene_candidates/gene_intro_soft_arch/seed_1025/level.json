@@ -1,0 +1,325 @@
+{
+  "id": 126,
+  "name": "gene_intro_soft_arch seed 1025",
+  "difficulty": 1,
+  "chapterId": "generated_candidate",
+  "subchapterId": "gene_intro_soft_arch",
+  "rows": 7,
+  "cols": 6,
+  "layers": 2,
+  "background": "newtheme/bg/chapter1/1",
+  "slotCapacity": 7,
+  "masked": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      5
+    ]
+  ],
+  "goal": {
+    "type": "clearAll"
+  },
+  "tiles": [
+    {
+      "id": "G126_T001",
+      "type": "ice",
+      "row": 1,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G126_T002",
+      "type": "fire",
+      "row": 1,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G126_T003",
+      "type": "eggplant",
+      "row": 2,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "G126_T004",
+      "type": "eggplant",
+      "row": 2,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G126_T005",
+      "type": "kiwi",
+      "row": 2,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G126_T006",
+      "type": "apple",
+      "row": 2,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G126_T007",
+      "type": "kiwi",
+      "row": 2,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G126_T008",
+      "type": "mangosteen",
+      "row": 2,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G126_T009",
+      "type": "eggplant",
+      "row": 3,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G126_T010",
+      "type": "carrot",
+      "row": 3,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G126_T011",
+      "type": "iris",
+      "row": 3,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G126_T012",
+      "type": "iris",
+      "row": 3,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G126_T013",
+      "type": "apple",
+      "row": 4,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G126_T014",
+      "type": "ice",
+      "row": 4,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G126_T015",
+      "type": "mangosteen",
+      "row": 4,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G126_T016",
+      "type": "kiwi",
+      "row": 4,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G126_T017",
+      "type": "apple",
+      "row": 5,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G126_T018",
+      "type": "carrot",
+      "row": 5,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G126_T019",
+      "type": "flower_orange",
+      "row": 5,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G126_T020",
+      "type": "gem_purple",
+      "row": 5,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G126_T021",
+      "type": "gem_purple",
+      "row": 6,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G126_T022",
+      "type": "fire",
+      "row": 6,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G126_T023",
+      "type": "carrot",
+      "row": 6,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G126_T024",
+      "type": "flower_orange",
+      "row": 6,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G126_T025",
+      "type": "gem_purple",
+      "row": 2,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G126_T026",
+      "type": "fire",
+      "row": 2,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G126_T027",
+      "type": "mangosteen",
+      "row": 3,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G126_T028",
+      "type": "ice",
+      "row": 3,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G126_T029",
+      "type": "flower_orange",
+      "row": 4,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G126_T030",
+      "type": "iris",
+      "row": 4,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    }
+  ],
+  "geneId": "gene_intro_soft_arch",
+  "geneSeed": 1025,
+  "shapeVariant": "mountain",
+  "shapeLabel": "山 / 三峰",
+  "symmetryMode": "lr",
+  "symmetryLabel": "左右对称"
+}

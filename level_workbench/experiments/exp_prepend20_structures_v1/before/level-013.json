@@ -1,0 +1,505 @@
+{
+  "id": 13,
+  "name": "测试第13关",
+  "difficulty": 4,
+  "chapterId": "review_test",
+  "rows": 8,
+  "cols": 7,
+  "layers": 4,
+  "background": "newtheme/bg/chapter2/1",
+  "slotCapacity": 7,
+  "masked": [
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ]
+  ],
+  "allowedBoosters": [
+    "hint",
+    "shuffle",
+    "undo"
+  ],
+  "boosters": {
+    "unlocked": [
+      "hint",
+      "shuffle",
+      "undo"
+    ],
+    "grantTo": {
+      "hint": 2,
+      "shuffle": 1,
+      "undo": 2
+    }
+  },
+  "goal": {
+    "type": "clearAll"
+  },
+  "tiles": [
+    {
+      "id": "L013_T001",
+      "type": "iris",
+      "row": 0,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L013_T002",
+      "type": "leaf_green",
+      "row": 0,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L013_T003",
+      "type": "leaf_green",
+      "row": 0,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L013_T004",
+      "type": "iris",
+      "row": 0,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L013_T005",
+      "type": "carrot",
+      "row": 0,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L013_T006",
+      "type": "grape",
+      "row": 0,
+      "col": 6,
+      "layer": 0
+    },
+    {
+      "id": "L013_T007",
+      "type": "flower_yellow",
+      "row": 1,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L013_T008",
+      "type": "fire",
+      "row": 1,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L013_T009",
+      "type": "flower_pink",
+      "row": 1,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L013_T010",
+      "type": "carrot",
+      "row": 1,
+      "col": 6,
+      "layer": 0
+    },
+    {
+      "id": "L013_T011",
+      "type": "flower_yellow",
+      "row": 2,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L013_T012",
+      "type": "fire",
+      "row": 2,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L013_T013",
+      "type": "carrot",
+      "row": 2,
+      "col": 6,
+      "layer": 0
+    },
+    {
+      "id": "L013_T014",
+      "type": "grape",
+      "row": 3,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L013_T015",
+      "type": "leaf_green",
+      "row": 3,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L013_T016",
+      "type": "snowflake",
+      "row": 3,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L013_T017",
+      "type": "snowflake",
+      "row": 4,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L013_T018",
+      "type": "iris",
+      "row": 4,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L013_T019",
+      "type": "eggplant",
+      "row": 4,
+      "col": 6,
+      "layer": 0
+    },
+    {
+      "id": "L013_T020",
+      "type": "ginkgo",
+      "row": 5,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L013_T021",
+      "type": "ginkgo",
+      "row": 5,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L013_T022",
+      "type": "snowflake",
+      "row": 5,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L013_T023",
+      "type": "flower_pink",
+      "row": 5,
+      "col": 6,
+      "layer": 0
+    },
+    {
+      "id": "L013_T024",
+      "type": "fire",
+      "row": 6,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L013_T025",
+      "type": "eggplant",
+      "row": 6,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L013_T026",
+      "type": "eggplant",
+      "row": 6,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L013_T027",
+      "type": "ginkgo",
+      "row": 6,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L013_T028",
+      "type": "flower_yellow",
+      "row": 6,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L013_T029",
+      "type": "flower_pink",
+      "row": 6,
+      "col": 6,
+      "layer": 0
+    },
+    {
+      "id": "L013_T030",
+      "type": "grape",
+      "row": 7,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L013_T031",
+      "type": "battery_blue",
+      "row": 7,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L013_T032",
+      "type": "kiwi_half",
+      "row": 1,
+      "col": 0,
+      "layer": 1
+    },
+    {
+      "id": "L013_T033",
+      "type": "kiwi_half",
+      "row": 1,
+      "col": 1,
+      "layer": 1
+    },
+    {
+      "id": "L013_T034",
+      "type": "gem_purple",
+      "row": 1,
+      "col": 4,
+      "layer": 1
+    },
+    {
+      "id": "L013_T035",
+      "type": "kiwi_half",
+      "row": 1,
+      "col": 5,
+      "layer": 1
+    },
+    {
+      "id": "L013_T036",
+      "type": "mangosteen",
+      "row": 2,
+      "col": 0,
+      "layer": 1
+    },
+    {
+      "id": "L013_T037",
+      "type": "chili",
+      "row": 3,
+      "col": 2,
+      "layer": 1
+    },
+    {
+      "id": "L013_T038",
+      "type": "mangosteen",
+      "row": 3,
+      "col": 3,
+      "layer": 1
+    },
+    {
+      "id": "L013_T039",
+      "type": "chili",
+      "row": 3,
+      "col": 4,
+      "layer": 1
+    },
+    {
+      "id": "L013_T040",
+      "type": "gem_purple",
+      "row": 4,
+      "col": 0,
+      "layer": 1
+    },
+    {
+      "id": "L013_T041",
+      "type": "ice",
+      "row": 4,
+      "col": 1,
+      "layer": 1
+    },
+    {
+      "id": "L013_T042",
+      "type": "gem_purple",
+      "row": 4,
+      "col": 2,
+      "layer": 1
+    },
+    {
+      "id": "L013_T043",
+      "type": "chili",
+      "row": 4,
+      "col": 3,
+      "layer": 1
+    },
+    {
+      "id": "L013_T044",
+      "type": "bolt",
+      "row": 5,
+      "col": 0,
+      "layer": 1
+    },
+    {
+      "id": "L013_T045",
+      "type": "mangosteen",
+      "row": 5,
+      "col": 5,
+      "layer": 1
+    },
+    {
+      "id": "L013_T046",
+      "type": "ice",
+      "row": 6,
+      "col": 0,
+      "layer": 1
+    },
+    {
+      "id": "L013_T047",
+      "type": "ice",
+      "row": 6,
+      "col": 1,
+      "layer": 1
+    },
+    {
+      "id": "L013_T048",
+      "type": "bolt",
+      "row": 6,
+      "col": 4,
+      "layer": 1
+    },
+    {
+      "id": "L013_T049",
+      "type": "bolt",
+      "row": 6,
+      "col": 5,
+      "layer": 1
+    },
+    {
+      "id": "L013_T050",
+      "type": "kiwi",
+      "row": 3,
+      "col": 2,
+      "layer": 2
+    },
+    {
+      "id": "L013_T051",
+      "type": "kiwi",
+      "row": 3,
+      "col": 3,
+      "layer": 2
+    },
+    {
+      "id": "L013_T052",
+      "type": "flower_orange",
+      "row": 3,
+      "col": 4,
+      "layer": 2
+    },
+    {
+      "id": "L013_T053",
+      "type": "flower_orange",
+      "row": 4,
+      "col": 1,
+      "layer": 2
+    },
+    {
+      "id": "L013_T054",
+      "type": "flower_orange",
+      "row": 4,
+      "col": 2,
+      "layer": 2
+    },
+    {
+      "id": "L013_T055",
+      "type": "kiwi",
+      "row": 4,
+      "col": 3,
+      "layer": 2
+    },
+    {
+      "id": "L013_T056",
+      "type": "leaf",
+      "row": 3,
+      "col": 2,
+      "layer": 3
+    },
+    {
+      "id": "L013_T057",
+      "type": "leaf",
+      "row": 4,
+      "col": 2,
+      "layer": 3
+    },
+    {
+      "id": "L013_T058",
+      "type": "leaf",
+      "row": 4,
+      "col": 3,
+      "layer": 3
+    },
+    {
+      "id": "L013_T059",
+      "type": "battery_blue",
+      "row": 5,
+      "col": 1,
+      "layer": 3
+    },
+    {
+      "id": "L013_T060",
+      "type": "battery_blue",
+      "row": 5,
+      "col": 2,
+      "layer": 3
+    }
+  ],
+  "tileBase": "newtheme/tile_base_green",
+  "subchapterId": "review_test_02"
+}

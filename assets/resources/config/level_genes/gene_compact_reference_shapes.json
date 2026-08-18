@@ -1,0 +1,84 @@
+{
+  "id": "gene_compact_reference_shapes",
+  "name": "竖版母版参考形状扩展",
+  "stage": "workbench_showcase",
+  "gridSize": "7x8",
+  "seedStart": 8000,
+  "heightWeights": {
+    "h1": 0.56,
+    "h2": 0.34,
+    "h3": 0.1
+  },
+  "tileCountRange": [
+    36,
+    60
+  ],
+  "ensureShapeCoverage": true,
+  "maxAttemptsMultiplier": 40,
+  "mechanicBlacklist": [
+    "piggy",
+    "conveyor",
+    "dropChute",
+    "skyscraper",
+    "cover"
+  ],
+  "allowedMechanics": [],
+  "iconPoolSize": 8,
+  "redundancyK": 1.18,
+  "interferencePattern": "compact_reference",
+  "shapeVariants": [
+    "a_shape",
+    "h_shape",
+    "up_down_keys",
+    "top_bottom_cluster",
+    "notch_tab",
+    "two_bridge",
+    "corners_center",
+    "tree_shape",
+    "fishbone",
+    "horizontal_keys",
+    "mountain",
+    "m_shape",
+    "n_shape",
+    "z_shape",
+    "s_shape",
+    "v_shape",
+    "infinity",
+    "bowtie",
+    "i_beam",
+    "ring",
+    "zhong_shape",
+    "cross",
+    "u_shape",
+    "hourglass",
+    "double_arch",
+    "one_bridge"
+  ],
+  "breathingCorridor": {
+    "type": "vertical_template",
+    "width": 1,
+    "strength": 0.9
+  },
+  "openingFlow": {
+    "immediateMatches": [
+      2,
+      3
+    ],
+    "candidatePairs": [
+      4,
+      7
+    ],
+    "firstStepsChain": 4,
+    "softGatesAfterGroups": [
+      4,
+      9
+    ]
+  },
+  "validatorThresholds": {
+    "dfsDepthLimit": 18,
+    "minOpeningMatches": 2,
+    "maxOpeningMatches": 3,
+    "minBranchingFactor": 2.0,
+    "maxBottleneckDepth": 4
+  }
+}

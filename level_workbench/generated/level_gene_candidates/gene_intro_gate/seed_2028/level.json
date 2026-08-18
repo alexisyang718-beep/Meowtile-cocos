@@ -1,0 +1,307 @@
+{
+  "id": 98,
+  "name": "gene_intro_gate seed 2028",
+  "difficulty": 1,
+  "chapterId": "generated_candidate",
+  "subchapterId": "gene_intro_gate",
+  "rows": 7,
+  "cols": 6,
+  "layers": 2,
+  "background": "newtheme/bg/chapter1/1",
+  "slotCapacity": 7,
+  "masked": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      6,
+      4
+    ]
+  ],
+  "goal": {
+    "type": "clearAll"
+  },
+  "tiles": [
+    {
+      "id": "G098_T001",
+      "type": "apple",
+      "row": 1,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G098_T002",
+      "type": "gem_purple",
+      "row": 1,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G098_T003",
+      "type": "ice",
+      "row": 2,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "G098_T004",
+      "type": "kiwi_half",
+      "row": 2,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G098_T005",
+      "type": "leaf",
+      "row": 2,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G098_T006",
+      "type": "kiwi_half",
+      "row": 2,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G098_T007",
+      "type": "gem_purple",
+      "row": 2,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G098_T008",
+      "type": "gem_purple",
+      "row": 2,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G098_T009",
+      "type": "ice",
+      "row": 3,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "G098_T010",
+      "type": "ginkgo",
+      "row": 3,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G098_T011",
+      "type": "eggplant",
+      "row": 3,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G098_T012",
+      "type": "kiwi_half",
+      "row": 3,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G098_T013",
+      "type": "ice",
+      "row": 4,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "G098_T014",
+      "type": "ginkgo",
+      "row": 4,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G098_T015",
+      "type": "leaf",
+      "row": 5,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "G098_T016",
+      "type": "leaf",
+      "row": 5,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G098_T017",
+      "type": "eggplant",
+      "row": 6,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "G098_T018",
+      "type": "apple",
+      "row": 6,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G098_T019",
+      "type": "eggplant",
+      "row": 1,
+      "col": 1,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": -1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G098_T020",
+      "type": "apple",
+      "row": 1,
+      "col": 4,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": -1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G098_T021",
+      "type": "ginkgo",
+      "row": 2,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G098_T022",
+      "type": "flower_yellow",
+      "row": 2,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G098_T023",
+      "type": "flower_yellow",
+      "row": 3,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G098_T024",
+      "type": "flower_yellow",
+      "row": 3,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    }
+  ],
+  "geneId": "gene_intro_gate",
+  "geneSeed": 2028,
+  "shapeVariant": "m_shape",
+  "shapeLabel": "M 型",
+  "symmetryMode": "lr",
+  "symmetryLabel": "左右对称"
+}

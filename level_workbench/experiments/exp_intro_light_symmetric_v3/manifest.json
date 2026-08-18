@@ -1,0 +1,62 @@
+{
+  "id": "exp_intro_light_symmetric_v3",
+  "createdAt": "2026-07-06T22:09:03.130068",
+  "purpose": "Reduce tile counts in levels 1-4, move beginner-friendly symmetric structures earlier, and replace level 9 with a symmetric hourglass shape.",
+  "updates": [
+    [
+      1,
+      "central_stack_intro",
+      "large",
+      7,
+      6,
+      3,
+      42,
+      5.7,
+      6.64
+    ],
+    [
+      2,
+      "soft_mountain_intro",
+      "large",
+      7,
+      6,
+      3,
+      48,
+      5.7,
+      5.7
+    ],
+    [
+      3,
+      "small_peak_intro",
+      "large",
+      7,
+      6,
+      4,
+      54,
+      5.7,
+      6.64
+    ],
+    [
+      4,
+      "mini_double_hill_intro",
+      "large",
+      7,
+      6,
+      3,
+      54,
+      5.7,
+      5.7
+    ],
+    [
+      9,
+      "symmetric_hourglass",
+      "small",
+      8,
+      7,
+      5,
+      90,
+      6.64,
+      7.58
+    ]
+  ]
+}

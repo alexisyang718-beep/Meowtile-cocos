@@ -1,0 +1,396 @@
+{
+  "id": 3,
+  "name": "测试第3关 · small_symmetric_arch",
+  "difficulty": 1,
+  "chapterId": "review_test",
+  "subchapterId": "review_test_01",
+  "rows": 7,
+  "cols": 6,
+  "layers": 3,
+  "background": "newtheme/bg/chapter1/1",
+  "slotCapacity": 7,
+  "masked": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      6,
+      5
+    ]
+  ],
+  "allowedBoosters": [
+    "hint",
+    "shuffle",
+    "undo"
+  ],
+  "boosters": {
+    "unlocked": [
+      "hint",
+      "shuffle",
+      "undo"
+    ],
+    "grantTo": {
+      "hint": 2,
+      "shuffle": 1,
+      "undo": 2
+    }
+  },
+  "goal": {
+    "type": "clearAll"
+  },
+  "tiles": [
+    {
+      "id": "L003_T001",
+      "type": "bolt",
+      "row": 1,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L003_T002",
+      "type": "bolt",
+      "row": 1,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L003_T003",
+      "type": "bolt",
+      "row": 2,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L003_T004",
+      "type": "bolt",
+      "row": 2,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L003_T005",
+      "type": "leaf_green",
+      "row": 2,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L003_T006",
+      "type": "ice",
+      "row": 2,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L003_T007",
+      "type": "fire",
+      "row": 3,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L003_T008",
+      "type": "leaf_green",
+      "row": 3,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L003_T009",
+      "type": "mangosteen",
+      "row": 3,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L003_T010",
+      "type": "watermelon",
+      "row": 3,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L003_T011",
+      "type": "bolt",
+      "row": 3,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L003_T012",
+      "type": "kiwi",
+      "row": 3,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L003_T013",
+      "type": "watermelon",
+      "row": 4,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L003_T014",
+      "type": "kettle",
+      "row": 4,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L003_T015",
+      "type": "leaf_green",
+      "row": 4,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L003_T016",
+      "type": "mangosteen",
+      "row": 4,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L003_T017",
+      "type": "bolt",
+      "row": 5,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L003_T018",
+      "type": "kiwi",
+      "row": 5,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L003_T019",
+      "type": "leaf_green",
+      "row": 5,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L003_T020",
+      "type": "ice",
+      "row": 5,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L003_T021",
+      "type": "leaf_green",
+      "row": 5,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L003_T022",
+      "type": "mangosteen",
+      "row": 5,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L003_T023",
+      "type": "fire",
+      "row": 2,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L003_T024",
+      "type": "ice",
+      "row": 2,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L003_T025",
+      "type": "ice",
+      "row": 3,
+      "col": 1,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L003_T026",
+      "type": "leaf_green",
+      "row": 3,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L003_T027",
+      "type": "kiwi",
+      "row": 3,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L003_T028",
+      "type": "watermelon",
+      "row": 3,
+      "col": 4,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L003_T029",
+      "type": "fire",
+      "row": 4,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L003_T030",
+      "type": "ice",
+      "row": 4,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L003_T031",
+      "type": "watermelon",
+      "row": 5,
+      "col": 1,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L003_T032",
+      "type": "kettle",
+      "row": 5,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L003_T033",
+      "type": "watermelon",
+      "row": 5,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L003_T034",
+      "type": "kettle",
+      "row": 5,
+      "col": 4,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L003_T035",
+      "type": "ice",
+      "row": 3,
+      "col": 2,
+      "layer": 2,
+      "layerStepDirX": -1,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L003_T036",
+      "type": "watermelon",
+      "row": 3,
+      "col": 3,
+      "layer": 2,
+      "layerStepDirX": 1,
+      "layerStepDirY": 0
+    }
+  ]
+}

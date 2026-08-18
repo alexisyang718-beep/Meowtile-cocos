@@ -1,0 +1,49 @@
+{
+  "id": "gene_intro_soft_arch",
+  "name": "入门柔和拱形",
+  "stage": "intro",
+  "gridSize": "6x7",
+  "seedStart": 1000,
+  "heightWeights": {
+    "h1": 0.72,
+    "h2": 0.24,
+    "h3": 0.04
+  },
+  "mechanicBlacklist": [
+    "piggy",
+    "conveyor",
+    "dropChute",
+    "skyscraper",
+    "cover"
+  ],
+  "allowedMechanics": [],
+  "iconPoolSize": 6,
+  "redundancyK": 1.25,
+  "interferencePattern": "soft_arch",
+  "breathingCorridor": {
+    "type": "center_vertical",
+    "width": 1,
+    "strength": 0.7
+  },
+  "openingFlow": {
+    "immediateMatches": [
+      2,
+      3
+    ],
+    "candidatePairs": [
+      3,
+      5
+    ],
+    "firstStepsChain": 4,
+    "softGatesAfterGroups": [
+      4
+    ]
+  },
+  "validatorThresholds": {
+    "dfsDepthLimit": 18,
+    "minOpeningMatches": 2,
+    "maxOpeningMatches": 3,
+    "minBranchingFactor": 2.0,
+    "maxBottleneckDepth": 3
+  }
+}

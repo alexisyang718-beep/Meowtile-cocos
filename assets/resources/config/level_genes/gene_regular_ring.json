@@ -1,0 +1,50 @@
+{
+  "id": "gene_regular_ring",
+  "name": "常规中心空洞",
+  "stage": "regular",
+  "gridSize": "7x8",
+  "seedStart": 3000,
+  "heightWeights": {
+    "h1": 0.56,
+    "h2": 0.34,
+    "h3": 0.1
+  },
+  "mechanicBlacklist": [
+    "piggy",
+    "conveyor",
+    "dropChute",
+    "skyscraper",
+    "cover"
+  ],
+  "allowedMechanics": [],
+  "iconPoolSize": 8,
+  "redundancyK": 1.18,
+  "interferencePattern": "open_ring",
+  "breathingCorridor": {
+    "type": "center_hole",
+    "width": 2,
+    "strength": 1.0
+  },
+  "openingFlow": {
+    "immediateMatches": [
+      2,
+      3
+    ],
+    "candidatePairs": [
+      4,
+      6
+    ],
+    "firstStepsChain": 4,
+    "softGatesAfterGroups": [
+      4,
+      9
+    ]
+  },
+  "validatorThresholds": {
+    "dfsDepthLimit": 18,
+    "minOpeningMatches": 2,
+    "maxOpeningMatches": 3,
+    "minBranchingFactor": 2.2,
+    "maxBottleneckDepth": 3
+  }
+}

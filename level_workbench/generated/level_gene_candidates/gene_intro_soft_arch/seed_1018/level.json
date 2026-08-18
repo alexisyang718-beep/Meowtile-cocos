@@ -1,0 +1,371 @@
+{
+  "id": 119,
+  "name": "gene_intro_soft_arch seed 1018",
+  "difficulty": 1,
+  "chapterId": "generated_candidate",
+  "subchapterId": "gene_intro_soft_arch",
+  "rows": 7,
+  "cols": 6,
+  "layers": 2,
+  "background": "newtheme/bg/chapter1/1",
+  "slotCapacity": 7,
+  "masked": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      6,
+      5
+    ]
+  ],
+  "goal": {
+    "type": "clearAll"
+  },
+  "tiles": [
+    {
+      "id": "G119_T001",
+      "type": "lemon",
+      "row": 1,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "G119_T002",
+      "type": "mangosteen",
+      "row": 1,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G119_T003",
+      "type": "flower_purple",
+      "row": 1,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G119_T004",
+      "type": "watermelon",
+      "row": 1,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G119_T005",
+      "type": "lemon",
+      "row": 2,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "G119_T006",
+      "type": "carrot",
+      "row": 2,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G119_T007",
+      "type": "mango",
+      "row": 2,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G119_T008",
+      "type": "gem_purple",
+      "row": 2,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G119_T009",
+      "type": "lemon",
+      "row": 3,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "G119_T010",
+      "type": "carrot",
+      "row": 3,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G119_T011",
+      "type": "kettle",
+      "row": 3,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G119_T012",
+      "type": "gem_purple",
+      "row": 3,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G119_T013",
+      "type": "flower_purple",
+      "row": 3,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G119_T014",
+      "type": "bolt",
+      "row": 3,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G119_T015",
+      "type": "mangosteen",
+      "row": 4,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "G119_T016",
+      "type": "bolt",
+      "row": 4,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G119_T017",
+      "type": "watermelon",
+      "row": 4,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G119_T018",
+      "type": "leaf",
+      "row": 4,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G119_T019",
+      "type": "mango",
+      "row": 5,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "G119_T020",
+      "type": "mango",
+      "row": 5,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G119_T021",
+      "type": "leaf",
+      "row": 5,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G119_T022",
+      "type": "flower_pink",
+      "row": 5,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G119_T023",
+      "type": "bolt",
+      "row": 5,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G119_T024",
+      "type": "kettle",
+      "row": 5,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G119_T025",
+      "type": "kettle",
+      "row": 6,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G119_T026",
+      "type": "flower_purple",
+      "row": 6,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G119_T027",
+      "type": "flower_pink",
+      "row": 1,
+      "col": 1,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": -1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G119_T028",
+      "type": "flower_pink",
+      "row": 1,
+      "col": 4,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": -1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G119_T029",
+      "type": "leaf",
+      "row": 2,
+      "col": 1,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G119_T030",
+      "type": "watermelon",
+      "row": 2,
+      "col": 4,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G119_T031",
+      "type": "carrot",
+      "row": 3,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G119_T032",
+      "type": "grape",
+      "row": 3,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G119_T033",
+      "type": "gem_purple",
+      "row": 4,
+      "col": 1,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G119_T034",
+      "type": "mangosteen",
+      "row": 4,
+      "col": 4,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G119_T035",
+      "type": "grape",
+      "row": 5,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G119_T036",
+      "type": "grape",
+      "row": 5,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 1,
+      "layerStepCoef": 0.25
+    }
+  ],
+  "geneId": "gene_intro_soft_arch",
+  "geneSeed": 1018,
+  "shapeVariant": "u_shape",
+  "shapeLabel": "U 型",
+  "symmetryMode": "lr",
+  "symmetryLabel": "左右对称"
+}

@@ -1,0 +1,496 @@
+{
+  "id": 177,
+  "name": "gene_regular_ring seed 3017",
+  "difficulty": 1,
+  "chapterId": "generated_candidate",
+  "subchapterId": "gene_regular_ring",
+  "rows": 8,
+  "cols": 7,
+  "layers": 3,
+  "background": "newtheme/bg/chapter1/1",
+  "slotCapacity": 7,
+  "masked": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      7,
+      4
+    ],
+    [
+      7,
+      5
+    ],
+    [
+      7,
+      6
+    ]
+  ],
+  "goal": {
+    "type": "clearAll"
+  },
+  "tiles": [
+    {
+      "id": "G177_T001",
+      "type": "watermelon",
+      "row": 0,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G177_T002",
+      "type": "mango",
+      "row": 0,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G177_T003",
+      "type": "apple",
+      "row": 0,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G177_T004",
+      "type": "fire",
+      "row": 0,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G177_T005",
+      "type": "watermelon",
+      "row": 1,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G177_T006",
+      "type": "bolt",
+      "row": 1,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G177_T007",
+      "type": "apple",
+      "row": 1,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G177_T008",
+      "type": "fire",
+      "row": 1,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G177_T009",
+      "type": "iris",
+      "row": 1,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G177_T010",
+      "type": "watermelon",
+      "row": 2,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G177_T011",
+      "type": "fire",
+      "row": 2,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G177_T012",
+      "type": "chili",
+      "row": 2,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G177_T013",
+      "type": "iris",
+      "row": 2,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G177_T014",
+      "type": "kettle",
+      "row": 2,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G177_T015",
+      "type": "mango",
+      "row": 3,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G177_T016",
+      "type": "bolt",
+      "row": 3,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G177_T017",
+      "type": "carrot",
+      "row": 3,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G177_T018",
+      "type": "ice",
+      "row": 3,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G177_T019",
+      "type": "snowflake",
+      "row": 3,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G177_T020",
+      "type": "snowflake",
+      "row": 3,
+      "col": 6,
+      "layer": 0
+    },
+    {
+      "id": "G177_T021",
+      "type": "carrot",
+      "row": 4,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G177_T022",
+      "type": "snowflake",
+      "row": 4,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G177_T023",
+      "type": "bolt",
+      "row": 4,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G177_T024",
+      "type": "fire",
+      "row": 5,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G177_T025",
+      "type": "ginkgo",
+      "row": 5,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G177_T026",
+      "type": "ice",
+      "row": 5,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G177_T027",
+      "type": "kettle",
+      "row": 5,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G177_T028",
+      "type": "kettle",
+      "row": 5,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G177_T029",
+      "type": "chili",
+      "row": 6,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G177_T030",
+      "type": "iris",
+      "row": 1,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G177_T031",
+      "type": "bolt",
+      "row": 1,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G177_T032",
+      "type": "apple",
+      "row": 2,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G177_T033",
+      "type": "ice",
+      "row": 2,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G177_T034",
+      "type": "gem_purple",
+      "row": 2,
+      "col": 4,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G177_T035",
+      "type": "gem_purple",
+      "row": 3,
+      "col": 1,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G177_T036",
+      "type": "chili",
+      "row": 3,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G177_T037",
+      "type": "gem_purple",
+      "row": 3,
+      "col": 5,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G177_T038",
+      "type": "fire",
+      "row": 4,
+      "col": 5,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G177_T039",
+      "type": "ginkgo",
+      "row": 5,
+      "col": 1,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": 1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G177_T040",
+      "type": "fire",
+      "row": 5,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G177_T041",
+      "type": "carrot",
+      "row": 5,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G177_T042",
+      "type": "ginkgo",
+      "row": 5,
+      "col": 4,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G177_T043",
+      "type": "bolt",
+      "row": 1,
+      "col": 3,
+      "layer": 2,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G177_T044",
+      "type": "mango",
+      "row": 3,
+      "col": 1,
+      "layer": 2,
+      "layerStepDirX": 1,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G177_T045",
+      "type": "bolt",
+      "row": 4,
+      "col": 5,
+      "layer": 2,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    }
+  ],
+  "geneId": "gene_regular_ring",
+  "geneSeed": 3017,
+  "shapeVariant": "s_shape",
+  "shapeLabel": "S 型",
+  "symmetryMode": "none",
+  "symmetryLabel": "母版原形"
+}

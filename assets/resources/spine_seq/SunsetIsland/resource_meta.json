@@ -1,0 +1,30 @@
+{
+  "index": 49,
+  "name": "SunsetIsland",
+  "id": "SunsetIsland",
+  "skel": "SunsetIsland/SunsetIsland.skel",
+  "atlas": "SunsetIsland/SunsetIsland.atlas",
+  "bounds": {
+    "h": 546.9154308734481,
+    "w": 580.0173463691458,
+    "x": -303.70637342550106,
+    "y": -187.3912914691516
+  },
+  "width": 600,
+  "height": 600,
+  "bones": 35,
+  "slots": 23,
+  "skins": 1,
+  "animations": [
+    {
+      "name": "Appera",
+      "duration": 1.3333333730697632,
+      "fps": 12,
+      "frames": 17,
+      "frameDuration": 0.08333333333333333,
+      "originalFrameTime": 0.07843137488645666,
+      "width": 600,
+      "height": 600
+    }
+  ]
+}

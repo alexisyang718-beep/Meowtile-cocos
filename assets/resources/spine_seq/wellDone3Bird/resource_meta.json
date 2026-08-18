@@ -1,0 +1,30 @@
+{
+  "index": 60,
+  "name": "wellDone3Bird",
+  "id": "wellDone3Bird",
+  "skel": "wellDone3Bird/wellDone3Bird.skel",
+  "atlas": "wellDone3Bird/wellDone3Bird.atlas",
+  "bounds": {
+    "h": 151.00000351245808,
+    "w": 171.2684933819776,
+    "x": -85.11018465011637,
+    "y": -75.0001095775038
+  },
+  "width": 600,
+  "height": 600,
+  "bones": 11,
+  "slots": 8,
+  "skins": 1,
+  "animations": [
+    {
+      "name": "WellDone",
+      "duration": 1,
+      "fps": 12,
+      "frames": 12,
+      "frameDuration": 0.08333333333333333,
+      "originalFrameTime": 0.08333333333333333,
+      "width": 600,
+      "height": 600
+    }
+  ]
+}

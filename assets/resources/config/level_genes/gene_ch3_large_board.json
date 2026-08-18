@@ -1,0 +1,52 @@
+{
+  "id": "gene_ch3_large_board",
+  "name": "第三章大棋盘少量投放",
+  "stage": "chapter3_plus",
+  "gridSize": "8x9",
+  "unlockFromChapter": 3,
+  "maxPerSubchapter": 2,
+  "seedStart": 5000,
+  "heightWeights": {
+    "h1": 0.48,
+    "h2": 0.38,
+    "h3": 0.14
+  },
+  "mechanicBlacklist": [
+    "piggy",
+    "conveyor",
+    "dropChute",
+    "skyscraper",
+    "cover"
+  ],
+  "allowedMechanics": [],
+  "iconPoolSize": 10,
+  "redundancyK": 1.12,
+  "interferencePattern": "large_balanced",
+  "breathingCorridor": {
+    "type": "wide_center",
+    "width": 2,
+    "strength": 0.8
+  },
+  "openingFlow": {
+    "immediateMatches": [
+      2,
+      3
+    ],
+    "candidatePairs": [
+      4,
+      7
+    ],
+    "firstStepsChain": 4,
+    "softGatesAfterGroups": [
+      4,
+      9
+    ]
+  },
+  "validatorThresholds": {
+    "dfsDepthLimit": 18,
+    "minOpeningMatches": 2,
+    "maxOpeningMatches": 3,
+    "minBranchingFactor": 2.0,
+    "maxBottleneckDepth": 4
+  }
+}

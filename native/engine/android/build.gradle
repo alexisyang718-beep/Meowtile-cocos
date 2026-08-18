@@ -1,0 +1,13 @@
+// Top-level Android Gradle configuration shared by the generated Cocos project.
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        // jcenter() // kept as anchor, will be removed soon
+    }
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}

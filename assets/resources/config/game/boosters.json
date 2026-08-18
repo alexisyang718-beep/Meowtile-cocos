@@ -1,0 +1,26 @@
+[
+  {
+    "id": "hint",
+    "name": "Hint",
+    "icon": "hint",
+    "initialCount": 2,
+    "cooldownSeconds": 0,
+    "description": "Highlight one playable tile."
+  },
+  {
+    "id": "shuffle",
+    "name": "Shuffle",
+    "icon": "shuffle",
+    "initialCount": 2,
+    "cooldownSeconds": 0,
+    "description": "Shuffle remaining board tiles."
+  },
+  {
+    "id": "undo",
+    "name": "Undo",
+    "icon": "undo",
+    "initialCount": 2,
+    "cooldownSeconds": 0,
+    "description": "Return the last unmatched tile from slot to board."
+  }
+]

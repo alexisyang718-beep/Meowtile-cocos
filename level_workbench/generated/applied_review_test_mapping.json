@@ -1,0 +1,185 @@
+{
+  "snapshot": "level_workbench/snapshots/20260707_142618_before_apply_gene_review20",
+  "levels": [
+    {
+      "levelId": 1,
+      "shapeLabel": "A 型",
+      "shapeVariant": "a_shape",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8000,
+      "tiles": 51,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8000/level.json"
+    },
+    {
+      "levelId": 2,
+      "shapeLabel": "H 型 / 双柱桥",
+      "shapeVariant": "h_shape",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8001,
+      "tiles": 42,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8001/level.json"
+    },
+    {
+      "levelId": 3,
+      "shapeLabel": "上下键",
+      "shapeVariant": "up_down_keys",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8002,
+      "tiles": 36,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8002/level.json"
+    },
+    {
+      "levelId": 4,
+      "shapeLabel": "上小下三组合",
+      "shapeVariant": "top_bottom_cluster",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8003,
+      "tiles": 42,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8003/level.json"
+    },
+    {
+      "levelId": 5,
+      "shapeLabel": "凹凸口",
+      "shapeVariant": "notch_tab",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8004,
+      "tiles": 60,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8004/level.json"
+    },
+    {
+      "levelId": 6,
+      "shapeLabel": "双桥",
+      "shapeVariant": "two_bridge",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8005,
+      "tiles": 36,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8005/level.json"
+    },
+    {
+      "levelId": 7,
+      "shapeLabel": "四角配中图",
+      "shapeVariant": "corners_center",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8006,
+      "tiles": 60,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8006/level.json"
+    },
+    {
+      "levelId": 8,
+      "shapeLabel": "树 / 上中下三峰",
+      "shapeVariant": "tree_shape",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8007,
+      "tiles": 45,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8007/level.json"
+    },
+    {
+      "levelId": 9,
+      "shapeLabel": "鱼骨 / 多层 V",
+      "shapeVariant": "fishbone",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8008,
+      "tiles": 39,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8008/level.json"
+    },
+    {
+      "levelId": 10,
+      "shapeLabel": "左右键",
+      "shapeVariant": "horizontal_keys",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8165,
+      "tiles": 36,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8165/level.json"
+    },
+    {
+      "levelId": 11,
+      "shapeLabel": "山 / 三峰",
+      "shapeVariant": "mountain",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8010,
+      "tiles": 36,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8010/level.json"
+    },
+    {
+      "levelId": 12,
+      "shapeLabel": "M 型",
+      "shapeVariant": "m_shape",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8167,
+      "tiles": 45,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8167/level.json"
+    },
+    {
+      "levelId": 13,
+      "shapeLabel": "N 型",
+      "shapeVariant": "n_shape",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8012,
+      "tiles": 57,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8012/level.json"
+    },
+    {
+      "levelId": 14,
+      "shapeLabel": "Z 型",
+      "shapeVariant": "z_shape",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8013,
+      "tiles": 45,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8013/level.json"
+    },
+    {
+      "levelId": 15,
+      "shapeLabel": "S 型",
+      "shapeVariant": "s_shape",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8014,
+      "tiles": 45,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8014/level.json"
+    },
+    {
+      "levelId": 16,
+      "shapeLabel": "V 字型",
+      "shapeVariant": "v_shape",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8015,
+      "tiles": 36,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8015/level.json"
+    },
+    {
+      "levelId": 17,
+      "shapeLabel": "无限符号",
+      "shapeVariant": "infinity",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8016,
+      "tiles": 36,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8016/level.json"
+    },
+    {
+      "levelId": 18,
+      "shapeLabel": "蝴蝶结 / 双三角",
+      "shapeVariant": "bowtie",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8017,
+      "tiles": 45,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8017/level.json"
+    },
+    {
+      "levelId": 19,
+      "shapeLabel": "工字型",
+      "shapeVariant": "i_beam",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8018,
+      "tiles": 60,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8018/level.json"
+    },
+    {
+      "levelId": 20,
+      "shapeLabel": "口字 / 回字",
+      "shapeVariant": "ring",
+      "geneId": "gene_compact_reference_shapes",
+      "geneSeed": 8019,
+      "tiles": 60,
+      "path": "/level_workbench/generated/level_gene_candidates/gene_compact_reference_shapes/seed_8019/level.json"
+    }
+  ]
+}

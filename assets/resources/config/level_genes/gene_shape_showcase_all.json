@@ -1,0 +1,70 @@
+{
+  "id": "gene_shape_showcase_all",
+  "name": "形状族与轴对称展示",
+  "stage": "workbench_showcase",
+  "gridSize": "7x8",
+  "seedStart": 6000,
+  "heightWeights": {
+    "h1": 0.56,
+    "h2": 0.34,
+    "h3": 0.1
+  },
+  "mechanicBlacklist": [
+    "piggy",
+    "conveyor",
+    "dropChute",
+    "skyscraper",
+    "cover"
+  ],
+  "allowedMechanics": [],
+  "iconPoolSize": 9,
+  "redundancyK": 1.16,
+  "ensureShapeCoverage": true,
+  "interferencePattern": "shape_showcase",
+  "shapeVariants": [
+    "mountain",
+    "m_shape",
+    "u_shape",
+    "n_shape",
+    "z_shape",
+    "s_shape",
+    "ring",
+    "double_arch",
+    "hourglass",
+    "four_corners",
+    "a_shape",
+    "h_shape",
+    "v_shape",
+    "infinity",
+    "bowtie",
+    "tree_shape",
+    "fishbone"
+  ],
+  "breathingCorridor": {
+    "type": "shape_dependent",
+    "width": 1,
+    "strength": 0.8
+  },
+  "openingFlow": {
+    "immediateMatches": [
+      2,
+      3
+    ],
+    "candidatePairs": [
+      4,
+      7
+    ],
+    "firstStepsChain": 4,
+    "softGatesAfterGroups": [
+      4,
+      9
+    ]
+  },
+  "validatorThresholds": {
+    "dfsDepthLimit": 18,
+    "minOpeningMatches": 2,
+    "maxOpeningMatches": 3,
+    "minBranchingFactor": 2.0,
+    "maxBottleneckDepth": 4
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": 1,
+  "name": "第1关 · 新手引导",
+  "difficulty": 1,
+  "chapterId": "chapter1",
+  "rows": 3,
+  "cols": 3,
+  "layers": 1,
+  "background": "newtheme/bg/chapter1/1",
+  "slotCapacity": 7,
+  "masked": [],
+  "allowedBoosters": [
+    "hint",
+    "shuffle",
+    "undo"
+  ],
+  "boosters": {
+    "unlocked": [
+      "hint",
+      "shuffle",
+      "undo"
+    ],
+    "grantTo": {
+      "hint": 2,
+      "shuffle": 1,
+      "undo": 2
+    }
+  },
+  "goal": {
+    "type": "clearAll"
+  },
+  "stackProfile": {
+    "maxLayers": 1,
+    "shape": "flat",
+    "tileCountHint": 9
+  },
+  "tiles": [
+    {
+      "id": "L001_T001",
+      "type": "apple",
+      "row": 0,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L001_T002",
+      "type": "apple",
+      "row": 0,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L001_T003",
+      "type": "apple",
+      "row": 0,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L001_T004",
+      "type": "cherry",
+      "row": 1,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L001_T005",
+      "type": "cherry",
+      "row": 1,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L001_T006",
+      "type": "cherry",
+      "row": 1,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L001_T007",
+      "type": "lemon",
+      "row": 2,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L001_T008",
+      "type": "lemon",
+      "row": 2,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L001_T009",
+      "type": "lemon",
+      "row": 2,
+      "col": 2,
+      "layer": 0
+    }
+  ],
+  "tileBase": "newtheme/tile_base_pink",
+  "subchapterId": "ch1_01"
+}

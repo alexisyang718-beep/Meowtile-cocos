@@ -1,0 +1,433 @@
+{
+  "id": 292,
+  "name": "第292关",
+  "difficulty": 5,
+  "chapterId": "chapter5",
+  "rows": 8,
+  "cols": 7,
+  "layers": 3,
+  "background": "newtheme/bg/chapter5/4",
+  "tileBase": "newtheme/tile_base",
+  "slotCapacity": 7,
+  "masked": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      7,
+      4
+    ],
+    [
+      7,
+      5
+    ],
+    [
+      7,
+      6
+    ]
+  ],
+  "allowedBoosters": [
+    "hint",
+    "shuffle",
+    "undo"
+  ],
+  "boosters": {
+    "unlocked": [
+      "hint",
+      "shuffle",
+      "undo"
+    ],
+    "grantTo": {
+      "hint": 2,
+      "shuffle": 1,
+      "undo": 2
+    }
+  },
+  "goal": {
+    "type": "clearAll"
+  },
+  "tiles": [
+    {
+      "id": "L292_T001",
+      "type": "peach",
+      "row": 3,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L292_T002",
+      "type": "peach",
+      "row": 2,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L292_T003",
+      "type": "chili",
+      "row": 3,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L292_T004",
+      "type": "battery_blue",
+      "row": 0,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L292_T005",
+      "type": "ginkgo",
+      "row": 1,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L292_T006",
+      "type": "eggplant",
+      "row": 1,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L292_T007",
+      "type": "battery_blue",
+      "row": 4,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L292_T008",
+      "type": "flower_orange",
+      "row": 1,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L292_T009",
+      "type": "kiwi",
+      "row": 2,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L292_T010",
+      "type": "watermelon",
+      "row": 2,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L292_T011",
+      "type": "peach",
+      "row": 3,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L292_T012",
+      "type": "flower_orange",
+      "row": 5,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L292_T013",
+      "type": "flower_pink",
+      "row": 4,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L292_T014",
+      "type": "flower_purple",
+      "row": 7,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L292_T015",
+      "type": "lemon",
+      "row": 4,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L292_T016",
+      "type": "flower_orange",
+      "row": 5,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L292_T017",
+      "type": "flower_purple",
+      "row": 5,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L292_T018",
+      "type": "ice",
+      "row": 6,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L292_T019",
+      "type": "battery_blue",
+      "row": 6,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L292_T020",
+      "type": "flower_purple",
+      "row": 6,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L292_T021",
+      "type": "flower_pink",
+      "row": 5,
+      "col": 2,
+      "layer": 1
+    },
+    {
+      "id": "L292_T022",
+      "type": "eggplant",
+      "row": 2,
+      "col": 3,
+      "layer": 1
+    },
+    {
+      "id": "L292_T023",
+      "type": "chili",
+      "row": 3,
+      "col": 4,
+      "layer": 1
+    },
+    {
+      "id": "L292_T024",
+      "type": "kiwi",
+      "row": 4,
+      "col": 3,
+      "layer": 1
+    },
+    {
+      "id": "L292_T025",
+      "type": "ice",
+      "row": 3,
+      "col": 3,
+      "layer": 1
+    },
+    {
+      "id": "L292_T026",
+      "type": "kiwi",
+      "row": 3,
+      "col": 2,
+      "layer": 1
+    },
+    {
+      "id": "L292_T027",
+      "type": "eggplant",
+      "row": 1,
+      "col": 3,
+      "layer": 1
+    },
+    {
+      "id": "L292_T028",
+      "type": "watermelon",
+      "row": 2,
+      "col": 4,
+      "layer": 1
+    },
+    {
+      "id": "L292_T029",
+      "type": "chili",
+      "row": 2,
+      "col": 2,
+      "layer": 1
+    },
+    {
+      "id": "L292_T030",
+      "type": "watermelon",
+      "row": 6,
+      "col": 3,
+      "layer": 1
+    },
+    {
+      "id": "L292_T031",
+      "type": "lemon",
+      "row": 4,
+      "col": 2,
+      "layer": 1
+    },
+    {
+      "id": "L292_T032",
+      "type": "ginkgo",
+      "row": 5,
+      "col": 3,
+      "layer": 1
+    },
+    {
+      "id": "L292_T033",
+      "type": "lemon",
+      "row": 5,
+      "col": 4,
+      "layer": 1
+    },
+    {
+      "id": "L292_T034",
+      "type": "ice",
+      "row": 4,
+      "col": 4,
+      "layer": 1
+    },
+    {
+      "id": "L292_T035",
+      "type": "flower_pink",
+      "row": 5,
+      "col": 3,
+      "layer": 2
+    },
+    {
+      "id": "L292_T036",
+      "type": "ginkgo",
+      "row": 2,
+      "col": 3,
+      "layer": 2
+    }
+  ],
+  "subchapterId": "ch5_04"
+}

@@ -1,0 +1,264 @@
+{
+  "id": 4,
+  "name": "第4关 · 双层小金字塔",
+  "difficulty": 1,
+  "chapterId": "chapter1",
+  "background": "newtheme/bg/chapter1/1",
+  "slotCapacity": 7,
+  "allowedBoosters": [
+    "hint",
+    "shuffle",
+    "undo"
+  ],
+  "boosters": {
+    "unlocked": [
+      "hint",
+      "shuffle",
+      "undo"
+    ],
+    "grantTo": {
+      "hint": 2,
+      "shuffle": 1,
+      "undo": 2
+    }
+  },
+  "goal": {
+    "type": "clearAll"
+  },
+  "tileBase": "newtheme/tile_base_pink",
+  "subchapterId": "ch1_01",
+  "randomizeTypes": true,
+  "rows": 5,
+  "cols": 7,
+  "layers": 2,
+  "masked": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      6
+    ]
+  ],
+  "stackProfile": {
+    "maxLayers": 2,
+    "shape": "pyramid",
+    "tileCountHint": 27
+  },
+  "tiles": [
+    {
+      "id": "L004_T001",
+      "type": "apple",
+      "row": 0,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L004_T002",
+      "type": "apple",
+      "row": 0,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L004_T003",
+      "type": "apple",
+      "row": 0,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L004_T004",
+      "type": "cherry",
+      "row": 1,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L004_T005",
+      "type": "cherry",
+      "row": 1,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L004_T006",
+      "type": "cherry",
+      "row": 1,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L004_T007",
+      "type": "lemon",
+      "row": 1,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L004_T008",
+      "type": "lemon",
+      "row": 2,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L004_T009",
+      "type": "lemon",
+      "row": 2,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L004_T010",
+      "type": "kiwi",
+      "row": 2,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L004_T011",
+      "type": "kiwi",
+      "row": 2,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L004_T012",
+      "type": "kiwi",
+      "row": 2,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L004_T013",
+      "type": "mango",
+      "row": 2,
+      "col": 6,
+      "layer": 0
+    },
+    {
+      "id": "L004_T014",
+      "type": "mango",
+      "row": 3,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L004_T015",
+      "type": "mango",
+      "row": 3,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L004_T016",
+      "type": "grape",
+      "row": 3,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L004_T017",
+      "type": "grape",
+      "row": 3,
+      "col": 6,
+      "layer": 0
+    },
+    {
+      "id": "L004_T018",
+      "type": "grape",
+      "row": 4,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L004_T019",
+      "type": "peach",
+      "row": 1,
+      "col": 3,
+      "layer": 1
+    },
+    {
+      "id": "L004_T020",
+      "type": "peach",
+      "row": 2,
+      "col": 3,
+      "layer": 1
+    },
+    {
+      "id": "L004_T021",
+      "type": "peach",
+      "row": 3,
+      "col": 2,
+      "layer": 1
+    },
+    {
+      "id": "L004_T022",
+      "type": "flower_pink",
+      "row": 3,
+      "col": 3,
+      "layer": 1
+    },
+    {
+      "id": "L004_T023",
+      "type": "flower_pink",
+      "row": 3,
+      "col": 4,
+      "layer": 1
+    },
+    {
+      "id": "L004_T024",
+      "type": "flower_pink",
+      "row": 4,
+      "col": 1,
+      "layer": 1
+    },
+    {
+      "id": "L004_T025",
+      "type": "snowflake",
+      "row": 4,
+      "col": 2,
+      "layer": 1
+    },
+    {
+      "id": "L004_T026",
+      "type": "snowflake",
+      "row": 4,
+      "col": 4,
+      "layer": 1
+    },
+    {
+      "id": "L004_T027",
+      "type": "snowflake",
+      "row": 4,
+      "col": 5,
+      "layer": 1
+    }
+  ]
+}

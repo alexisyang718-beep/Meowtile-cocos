@@ -1,0 +1,31 @@
+{
+  "id": "exp_front_low_pressure_v4",
+  "createdAt": "2026-07-06T22:29:01.634857",
+  "purpose": "Make levels 1-4 visually lighter and more suitable for early onboarding, inspired by low-pressure symmetric competitor boards.",
+  "updates": [
+    [
+      1,
+      "soft_center_entry",
+      24,
+      2
+    ],
+    [
+      2,
+      "gentle_wide_entry",
+      30,
+      2
+    ],
+    [
+      3,
+      "small_symmetric_arch",
+      36,
+      3
+    ],
+    [
+      4,
+      "light_double_column",
+      42,
+      3
+    ]
+  ]
+}

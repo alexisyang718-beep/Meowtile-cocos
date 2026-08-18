@@ -1,0 +1,40 @@
+{
+  "index": 28,
+  "name": "NewFinishedCountTwoBirds",
+  "id": "NewFinishedCountTwoBirds",
+  "skel": "NewFinishedCountTwoBirds/NewFinishedCountTwoBirds.skel",
+  "atlas": "NewFinishedCountTwoBirds/NewFinishedCountTwoBirds.atlas",
+  "bounds": {
+    "h": 632.0007580398276,
+    "w": 961.0017880658272,
+    "x": -475.00067072648585,
+    "y": -250.99972833659675
+  },
+  "width": 600,
+  "height": 600,
+  "bones": 100,
+  "slots": 71,
+  "skins": 1,
+  "animations": [
+    {
+      "name": "IdleTwoBirds",
+      "duration": 2.366666793823242,
+      "fps": 12,
+      "frames": 29,
+      "frameDuration": 0.08333333333333333,
+      "originalFrameTime": 0.08160919978700835,
+      "width": 600,
+      "height": 600
+    },
+    {
+      "name": "IdleTwoBirdsShortVer",
+      "duration": 1.8333333730697632,
+      "fps": 12,
+      "frames": 23,
+      "frameDuration": 0.08333333333333333,
+      "originalFrameTime": 0.07971014665520709,
+      "width": 600,
+      "height": 600
+    }
+  ]
+}

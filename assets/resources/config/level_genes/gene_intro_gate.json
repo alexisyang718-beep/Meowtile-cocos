@@ -1,0 +1,49 @@
+{
+  "id": "gene_intro_gate",
+  "name": "入门左右门型",
+  "stage": "intro",
+  "gridSize": "6x7",
+  "seedStart": 2000,
+  "heightWeights": {
+    "h1": 0.66,
+    "h2": 0.28,
+    "h3": 0.06
+  },
+  "mechanicBlacklist": [
+    "piggy",
+    "conveyor",
+    "dropChute",
+    "skyscraper",
+    "cover"
+  ],
+  "allowedMechanics": [],
+  "iconPoolSize": 7,
+  "redundancyK": 1.22,
+  "interferencePattern": "gentle_gate",
+  "breathingCorridor": {
+    "type": "center_gap",
+    "width": 1,
+    "strength": 0.8
+  },
+  "openingFlow": {
+    "immediateMatches": [
+      2,
+      3
+    ],
+    "candidatePairs": [
+      3,
+      5
+    ],
+    "firstStepsChain": 4,
+    "softGatesAfterGroups": [
+      4
+    ]
+  },
+  "validatorThresholds": {
+    "dfsDepthLimit": 18,
+    "minOpeningMatches": 2,
+    "maxOpeningMatches": 3,
+    "minBranchingFactor": 2.0,
+    "maxBottleneckDepth": 3
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "id": "exp_symmetrized_stack_dirs_v6",
+  "createdAt": "2026-07-07T09:56:57.047102",
+  "purpose": "Symmetrize upper-layer stack directions so actual Cocos visual positions match layer-symmetric structure previews. Mirrored cells use mirrored X direction and same Y direction."
+}

@@ -1,0 +1,817 @@
+{
+  "id": 10,
+  "name": "测试第10关 · butterfly_bridge",
+  "difficulty": 3,
+  "chapterId": "review_test",
+  "subchapterId": "review_test_01",
+  "rows": 8,
+  "cols": 7,
+  "layers": 4,
+  "background": "newtheme/bg/chapter1/1",
+  "slotCapacity": 7,
+  "masked": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      7,
+      4
+    ],
+    [
+      7,
+      5
+    ],
+    [
+      7,
+      6
+    ]
+  ],
+  "allowedBoosters": [
+    "hint",
+    "shuffle",
+    "undo"
+  ],
+  "boosters": {
+    "unlocked": [
+      "hint",
+      "shuffle",
+      "undo"
+    ],
+    "grantTo": {
+      "hint": 2,
+      "shuffle": 1,
+      "undo": 2
+    }
+  },
+  "goal": {
+    "type": "clearAll"
+  },
+  "tiles": [
+    {
+      "id": "L010_T001",
+      "type": "bolt",
+      "row": 0,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L010_T002",
+      "type": "ginkgo",
+      "row": 0,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L010_T003",
+      "type": "golden",
+      "row": 0,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L010_T004",
+      "type": "leaf_green",
+      "row": 0,
+      "col": 6,
+      "layer": 0
+    },
+    {
+      "id": "L010_T005",
+      "type": "ginkgo",
+      "row": 1,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "L010_T006",
+      "type": "cherry",
+      "row": 1,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L010_T007",
+      "type": "watermelon",
+      "row": 1,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L010_T008",
+      "type": "peach",
+      "row": 1,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L010_T009",
+      "type": "golden",
+      "row": 1,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L010_T010",
+      "type": "gem_purple",
+      "row": 1,
+      "col": 6,
+      "layer": 0
+    },
+    {
+      "id": "L010_T011",
+      "type": "battery_blue",
+      "row": 2,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L010_T012",
+      "type": "cherry",
+      "row": 2,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L010_T013",
+      "type": "golden",
+      "row": 2,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L010_T014",
+      "type": "battery_blue",
+      "row": 2,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L010_T015",
+      "type": "peach",
+      "row": 2,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L010_T016",
+      "type": "grape",
+      "row": 3,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L010_T017",
+      "type": "leaf_green",
+      "row": 3,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L010_T018",
+      "type": "leaf",
+      "row": 3,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L010_T019",
+      "type": "iris",
+      "row": 3,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L010_T020",
+      "type": "golden",
+      "row": 3,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L010_T021",
+      "type": "fire",
+      "row": 4,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "L010_T022",
+      "type": "peach",
+      "row": 4,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L010_T023",
+      "type": "gem_purple",
+      "row": 4,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L010_T024",
+      "type": "fire",
+      "row": 4,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L010_T025",
+      "type": "grape",
+      "row": 4,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "L010_T026",
+      "type": "peach",
+      "row": 5,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "L010_T027",
+      "type": "iris",
+      "row": 5,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L010_T028",
+      "type": "leaf",
+      "row": 5,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "L010_T029",
+      "type": "leaf",
+      "row": 6,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "L010_T030",
+      "type": "mango",
+      "row": 0,
+      "col": 0,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T031",
+      "type": "mango",
+      "row": 0,
+      "col": 1,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T032",
+      "type": "mango",
+      "row": 0,
+      "col": 5,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T033",
+      "type": "gem_purple",
+      "row": 0,
+      "col": 6,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T034",
+      "type": "grape",
+      "row": 1,
+      "col": 0,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T035",
+      "type": "fire",
+      "row": 1,
+      "col": 1,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T036",
+      "type": "cherry",
+      "row": 1,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T037",
+      "type": "leaf_green",
+      "row": 1,
+      "col": 4,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T038",
+      "type": "iris",
+      "row": 1,
+      "col": 5,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T039",
+      "type": "chili",
+      "row": 1,
+      "col": 6,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L010_T040",
+      "type": "leaf",
+      "row": 2,
+      "col": 1,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L010_T041",
+      "type": "golden",
+      "row": 2,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L010_T042",
+      "type": "watermelon",
+      "row": 2,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L010_T043",
+      "type": "iris",
+      "row": 2,
+      "col": 4,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T044",
+      "type": "ginkgo",
+      "row": 2,
+      "col": 5,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T045",
+      "type": "battery_blue",
+      "row": 3,
+      "col": 1,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L010_T046",
+      "type": "chili",
+      "row": 3,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T047",
+      "type": "chili",
+      "row": 3,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T048",
+      "type": "bolt",
+      "row": 3,
+      "col": 4,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L010_T049",
+      "type": "fire",
+      "row": 3,
+      "col": 5,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T050",
+      "type": "peach",
+      "row": 4,
+      "col": 1,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T051",
+      "type": "cherry",
+      "row": 4,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T052",
+      "type": "grape",
+      "row": 4,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L010_T053",
+      "type": "fire",
+      "row": 4,
+      "col": 4,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L010_T054",
+      "type": "iris",
+      "row": 4,
+      "col": 5,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T055",
+      "type": "gem_purple",
+      "row": 1,
+      "col": 0,
+      "layer": 2,
+      "layerStepDirX": 1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T056",
+      "type": "gem_purple",
+      "row": 1,
+      "col": 1,
+      "layer": 2,
+      "layerStepDirX": 1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T057",
+      "type": "cherry",
+      "row": 1,
+      "col": 2,
+      "layer": 2,
+      "layerStepDirX": -1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T058",
+      "type": "leaf_green",
+      "row": 1,
+      "col": 4,
+      "layer": 2,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T059",
+      "type": "chili",
+      "row": 1,
+      "col": 5,
+      "layer": 2,
+      "layerStepDirX": -1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T060",
+      "type": "watermelon",
+      "row": 1,
+      "col": 6,
+      "layer": 2,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L010_T061",
+      "type": "peach",
+      "row": 2,
+      "col": 1,
+      "layer": 2,
+      "layerStepDirX": 1,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L010_T062",
+      "type": "iris",
+      "row": 2,
+      "col": 2,
+      "layer": 2,
+      "layerStepDirX": 1,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L010_T063",
+      "type": "leaf_green",
+      "row": 2,
+      "col": 3,
+      "layer": 2,
+      "layerStepDirX": 1,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L010_T064",
+      "type": "battery_blue",
+      "row": 2,
+      "col": 4,
+      "layer": 2,
+      "layerStepDirX": 0,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L010_T065",
+      "type": "grape",
+      "row": 2,
+      "col": 5,
+      "layer": 2,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L010_T066",
+      "type": "leaf_green",
+      "row": 3,
+      "col": 1,
+      "layer": 2,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L010_T067",
+      "type": "gem_purple",
+      "row": 3,
+      "col": 2,
+      "layer": 2,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T068",
+      "type": "battery_blue",
+      "row": 3,
+      "col": 3,
+      "layer": 2,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L010_T069",
+      "type": "grape",
+      "row": 3,
+      "col": 4,
+      "layer": 2,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L010_T070",
+      "type": "fire",
+      "row": 3,
+      "col": 5,
+      "layer": 2,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L010_T071",
+      "type": "battery_blue",
+      "row": 4,
+      "col": 2,
+      "layer": 2,
+      "layerStepDirX": 1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T072",
+      "type": "chili",
+      "row": 4,
+      "col": 3,
+      "layer": 2,
+      "layerStepDirX": -1,
+      "layerStepDirY": 1,
+      "layerStepCoef": 0
+    },
+    {
+      "id": "L010_T073",
+      "type": "watermelon",
+      "row": 4,
+      "col": 4,
+      "layer": 2,
+      "layerStepDirX": 1,
+      "layerStepDirY": 1,
+      "layerStepCoef": 0.1
+    },
+    {
+      "id": "L010_T074",
+      "type": "watermelon",
+      "row": 2,
+      "col": 1,
+      "layer": 3,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T075",
+      "type": "cherry",
+      "row": 2,
+      "col": 2,
+      "layer": 3,
+      "layerStepDirX": 0,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T076",
+      "type": "leaf",
+      "row": 2,
+      "col": 3,
+      "layer": 3,
+      "layerStepDirX": 1,
+      "layerStepDirY": 0
+    },
+    {
+      "id": "L010_T077",
+      "type": "chili",
+      "row": 2,
+      "col": 4,
+      "layer": 3,
+      "layerStepDirX": -1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T078",
+      "type": "bolt",
+      "row": 2,
+      "col": 5,
+      "layer": 3,
+      "layerStepDirX": -1,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L010_T079",
+      "type": "leaf",
+      "row": 3,
+      "col": 2,
+      "layer": 3,
+      "layerStepDirX": 1,
+      "layerStepDirY": 1
+    },
+    {
+      "id": "L010_T080",
+      "type": "watermelon",
+      "row": 3,
+      "col": 3,
+      "layer": 3,
+      "layerStepDirX": 1,
+      "layerStepDirY": -1
+    },
+    {
+      "id": "L010_T081",
+      "type": "golden",
+      "row": 3,
+      "col": 4,
+      "layer": 3,
+      "layerStepDirX": 1,
+      "layerStepDirY": -1
+    }
+  ]
+}

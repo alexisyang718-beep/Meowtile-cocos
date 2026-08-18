@@ -1,0 +1,371 @@
+{
+  "id": 118,
+  "name": "gene_intro_soft_arch seed 1017",
+  "difficulty": 1,
+  "chapterId": "generated_candidate",
+  "subchapterId": "gene_intro_soft_arch",
+  "rows": 7,
+  "cols": 6,
+  "layers": 2,
+  "background": "newtheme/bg/chapter1/1",
+  "slotCapacity": 7,
+  "masked": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      5
+    ]
+  ],
+  "goal": {
+    "type": "clearAll"
+  },
+  "tiles": [
+    {
+      "id": "G118_T001",
+      "type": "mango",
+      "row": 1,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "G118_T002",
+      "type": "ice",
+      "row": 1,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G118_T003",
+      "type": "carrot",
+      "row": 1,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G118_T004",
+      "type": "flower_yellow",
+      "row": 1,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G118_T005",
+      "type": "mango",
+      "row": 2,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "G118_T006",
+      "type": "bolt",
+      "row": 2,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G118_T007",
+      "type": "chili",
+      "row": 2,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G118_T008",
+      "type": "ice",
+      "row": 2,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G118_T009",
+      "type": "ice",
+      "row": 3,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "G118_T010",
+      "type": "gem_purple",
+      "row": 3,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G118_T011",
+      "type": "chili",
+      "row": 3,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G118_T012",
+      "type": "battery_blue",
+      "row": 3,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G118_T013",
+      "type": "apple",
+      "row": 3,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G118_T014",
+      "type": "carrot",
+      "row": 3,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G118_T015",
+      "type": "flower_yellow",
+      "row": 4,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G118_T016",
+      "type": "mangosteen",
+      "row": 4,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G118_T017",
+      "type": "battery_blue",
+      "row": 5,
+      "col": 0,
+      "layer": 0
+    },
+    {
+      "id": "G118_T018",
+      "type": "eggplant",
+      "row": 5,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G118_T019",
+      "type": "bolt",
+      "row": 5,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G118_T020",
+      "type": "flower_yellow",
+      "row": 5,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G118_T021",
+      "type": "bolt",
+      "row": 5,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G118_T022",
+      "type": "apple",
+      "row": 5,
+      "col": 5,
+      "layer": 0
+    },
+    {
+      "id": "G118_T023",
+      "type": "mangosteen",
+      "row": 6,
+      "col": 1,
+      "layer": 0
+    },
+    {
+      "id": "G118_T024",
+      "type": "mangosteen",
+      "row": 6,
+      "col": 2,
+      "layer": 0
+    },
+    {
+      "id": "G118_T025",
+      "type": "eggplant",
+      "row": 6,
+      "col": 3,
+      "layer": 0
+    },
+    {
+      "id": "G118_T026",
+      "type": "gem_purple",
+      "row": 6,
+      "col": 4,
+      "layer": 0
+    },
+    {
+      "id": "G118_T027",
+      "type": "mango",
+      "row": 3,
+      "col": 0,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G118_T028",
+      "type": "gem_purple",
+      "row": 3,
+      "col": 1,
+      "layer": 1,
+      "layerStepDirX": 1,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G118_T029",
+      "type": "chili",
+      "row": 3,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G118_T030",
+      "type": "kiwi",
+      "row": 3,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G118_T031",
+      "type": "apple",
+      "row": 3,
+      "col": 4,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G118_T032",
+      "type": "carrot",
+      "row": 3,
+      "col": 5,
+      "layer": 1,
+      "layerStepDirX": -1,
+      "layerStepDirY": 0,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G118_T033",
+      "type": "battery_blue",
+      "row": 5,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G118_T034",
+      "type": "kiwi",
+      "row": 5,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G118_T035",
+      "type": "kiwi",
+      "row": 6,
+      "col": 2,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 1,
+      "layerStepCoef": 0.25
+    },
+    {
+      "id": "G118_T036",
+      "type": "eggplant",
+      "row": 6,
+      "col": 3,
+      "layer": 1,
+      "layerStepDirX": 0,
+      "layerStepDirY": 1,
+      "layerStepCoef": 0.25
+    }
+  ],
+  "geneId": "gene_intro_soft_arch",
+  "geneSeed": 1017,
+  "shapeVariant": "u_shape",
+  "shapeLabel": "U 型",
+  "symmetryMode": "lr",
+  "symmetryLabel": "左右对称"
+}

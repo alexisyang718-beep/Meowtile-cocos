@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ESNext",
+    "strict": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true
+  }
+}

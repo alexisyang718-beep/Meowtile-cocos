@@ -1,0 +1,10 @@
+{
+  "opening_matches": 2,
+  "candidate_pairs": 23,
+  "region_count": 5,
+  "max_groups_in_depth": 3,
+  "avg_branching": 48.14823529411765,
+  "bottleneck_depth": 0,
+  "valid": true,
+  "reasons": []
+}

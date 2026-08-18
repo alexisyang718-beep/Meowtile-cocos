@@ -1,0 +1,59 @@
+{
+  "id": "gene_fishbone_variants",
+  "name": "鱼骨母版补充候选",
+  "stage": "workbench_showcase",
+  "gridSize": "7x8",
+  "seedStart": 9000,
+  "candidatesPerGene": 10,
+  "heightWeights": {
+    "h1": 0.56,
+    "h2": 0.34,
+    "h3": 0.1
+  },
+  "tileCountRange": [
+    36,
+    60
+  ],
+  "maxAttemptsMultiplier": 30,
+  "mechanicBlacklist": [
+    "piggy",
+    "conveyor",
+    "dropChute",
+    "skyscraper",
+    "cover"
+  ],
+  "allowedMechanics": [],
+  "iconPoolSize": 8,
+  "redundancyK": 1.18,
+  "interferencePattern": "compact_reference",
+  "shapeVariants": [
+    "fishbone"
+  ],
+  "breathingCorridor": {
+    "type": "fishbone_variants",
+    "width": 1,
+    "strength": 0.9
+  },
+  "openingFlow": {
+    "immediateMatches": [
+      2,
+      3
+    ],
+    "candidatePairs": [
+      4,
+      7
+    ],
+    "firstStepsChain": 4,
+    "softGatesAfterGroups": [
+      4,
+      9
+    ]
+  },
+  "validatorThresholds": {
+    "dfsDepthLimit": 18,
+    "minOpeningMatches": 2,
+    "maxOpeningMatches": 3,
+    "minBranchingFactor": 2.0,
+    "maxBottleneckDepth": 4
+  }
+}

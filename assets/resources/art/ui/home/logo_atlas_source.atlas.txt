@@ -1,0 +1,146 @@
+Logo.png
+	size: 1024, 1024
+	filter: Linear, Linear
+	pma: true
+	scale: 0.7
+bird1_ahoge1
+	bounds: 604, 345, 81, 52
+bird1_ahoge2
+	bounds: 715, 598, 51, 38
+bird1_body1
+	bounds: 537, 598, 162, 176
+	offsets: 0, 2, 162, 178
+	rotate: 90
+bird1_body2
+	bounds: 310, 759, 216, 263
+bird1_body2_1
+	bounds: 426, 102, 65, 35
+	rotate: 90
+bird1_body2_2
+	bounds: 917, 728, 105, 78
+	offsets: 0, 0, 106, 78
+bird1_body3
+	bounds: 749, 764, 166, 258
+bird1_body3_1
+	bounds: 525, 407, 104, 67
+bird1_body3_2
+	bounds: 283, 169, 116, 64
+bird1_body3_3
+	bounds: 401, 194, 64, 52
+	rotate: 90
+bird1_body4
+	bounds: 528, 762, 219, 260
+bird1_eye
+	bounds: 640, 469, 127, 76
+	rotate: 90
+bird1_eye1
+	bounds: 718, 466, 36, 43
+	rotate: 90
+bird1_eye2
+	bounds: 604, 309, 34, 41
+	rotate: 90
+bird1_eyelid2_1
+	bounds: 455, 195, 52, 62
+bird1_eyelid2_2
+	bounds: 394, 260, 68, 69
+bird1_eyelid3_1
+	bounds: 533, 265, 65, 68
+bird1_eyelid3_2
+	bounds: 563, 205, 58, 50
+	rotate: 90
+bird1_eyelid3_4
+	bounds: 707, 430, 46, 34
+bird1_face
+	bounds: 715, 638, 122, 27
+	offsets: 0, 0, 123, 27
+	rotate: 90
+bird1_foot_l
+	bounds: 426, 53, 47, 42
+	offsets: 0, 0, 48, 42
+	rotate: 90
+bird1_foot_r
+	bounds: 687, 343, 54, 40
+	offsets: 0, 0, 55, 40
+	rotate: 90
+bird1_hand_l
+	bounds: 509, 198, 59, 52
+	offsets: 0, 2, 64, 54
+	rotate: 90
+bird1_hand_l1
+	bounds: 464, 259, 70, 67
+	rotate: 90
+bird1_hand_r1
+	bounds: 525, 335, 70, 77
+	rotate: 90
+bird1_highlight1
+	bounds: 647, 321, 22, 22
+	offsets: 1, 4, 24, 27
+bird1_highlight2
+	bounds: 124, 2, 23, 21
+	offsets: 1, 0, 25, 22
+bird1_mouth1
+	bounds: 394, 331, 25, 20
+bird1_mouth2
+	bounds: 94, 2, 21, 28
+	offsets: 0, 0, 23, 28
+	rotate: 90
+bird1_tail1
+	bounds: 707, 402, 25, 26
+bird1_tail2
+	bounds: 283, 364, 24, 11
+	rotate: 90
+e
+	bounds: 718, 546, 41, 50
+e1
+	bounds: 463, 152, 39, 41
+earth
+	bounds: 2, 713, 306, 309
+i
+	bounds: 401, 169, 23, 52
+	rotate: 90
+mountain
+	bounds: 631, 399, 74, 68
+o
+	bounds: 463, 111, 39, 39
+p
+	bounds: 421, 2, 43, 48
+piece0
+	bounds: 2, 390, 292, 321
+piece0_1
+	bounds: 317, 10, 40, 102
+	offsets: 1, 0, 42, 102
+	rotate: 90
+piece0_2
+	bounds: 212, 24, 123, 103
+	offsets: 1, 0, 125, 104
+	rotate: 90
+piece0_e
+	bounds: 94, 149, 187, 239
+piece0_i
+	bounds: 917, 808, 97, 214
+piece0_l
+	bounds: 310, 608, 149, 225
+	rotate: 90
+piece0_t
+	bounds: 296, 430, 176, 227
+	rotate: 90
+piecebottom_1
+	bounds: 525, 476, 113, 120
+piecebottom_2
+	bounds: 317, 52, 107, 115
+piecebottom_3
+	bounds: 283, 235, 109, 116
+piecebottom_4
+	bounds: 94, 25, 116, 122
+r
+	bounds: 470, 66, 33, 43
+ribbon1
+	bounds: 2, 2, 386, 90
+	rotate: 90
+ribbon2
+	bounds: 429, 331, 94, 97
+tree
+	bounds: 296, 353, 75, 131
+	rotate: 90
+x
+	bounds: 718, 504, 41, 40

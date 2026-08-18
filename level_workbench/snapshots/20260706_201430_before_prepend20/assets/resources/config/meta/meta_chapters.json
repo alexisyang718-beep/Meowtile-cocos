@@ -1,0 +1,396 @@
+[
+  {
+    "id": "chapter1",
+    "legacyChapterId": "france",
+    "title": "Chapter 1",
+    "name": "Cozy Cat Room",
+    "displayName": "窗边出发",
+    "levelRange": [
+      1,
+      12
+    ],
+    "unlockAfterLevel": null,
+    "theme": {
+      "icon": "🐱",
+      "accentColor": "#A96E45",
+      "background": "newtheme/bg/chapter1/1"
+    },
+    "subchapters": [
+      {
+        "id": "ch1_01",
+        "title": "Cat Plays Yarn",
+        "displayName": "Kitty Face",
+        "levelRange": [
+          1,
+          4
+        ],
+        "background": "newtheme/bg/chapter1/1",
+        "puzzleId": "ch1_01_cat_plays_yarn",
+        "puzzleResource": "config/beads/ch1_01_cat_plays_yarn",
+        "helperElement": "毛线球"
+      },
+      {
+        "id": "ch1_02",
+        "title": "Cat Stretching",
+        "displayName": "Cat Stretching",
+        "levelRange": [
+          5,
+          8
+        ],
+        "background": "newtheme/bg/chapter1/2",
+        "puzzleId": "ch1_02_cat_stretching",
+        "puzzleResource": "config/beads/ch1_02_cat_stretching",
+        "helperElement": "坐垫"
+      },
+      {
+        "id": "ch1_03",
+        "title": "Cat in Travel Bag",
+        "displayName": "Travel Bag Cat",
+        "levelRange": [
+          9,
+          12
+        ],
+        "background": "newtheme/bg/chapter1/3",
+        "puzzleId": "ch1_03_cat_in_travel_bag",
+        "puzzleResource": "config/beads/ch1_03_cat_in_travel_bag",
+        "helperElement": "旅行包"
+      }
+    ]
+  },
+  {
+    "id": "chapter2",
+    "legacyChapterId": "argentina",
+    "title": "Chapter 2",
+    "name": "Cat Café Window",
+    "displayName": "猫咖停留",
+    "levelRange": [
+      13,
+      80
+    ],
+    "unlockAfterLevel": 12,
+    "theme": {
+      "icon": "☕",
+      "accentColor": "#7FA9D8",
+      "background": "newtheme/bg/chapter2/1"
+    },
+    "subchapters": [
+      {
+        "id": "ch2_01",
+        "title": "Cat at Café Door",
+        "displayName": "Café Door",
+        "levelRange": [
+          13,
+          26
+        ],
+        "background": "newtheme/bg/chapter2/1",
+        "puzzleId": "ch2_01_cat_at_cafe_door",
+        "puzzleResource": "config/beads/ch2_01_cat_at_cafe_door",
+        "helperElement": "门铃 / 小招牌"
+      },
+      {
+        "id": "ch2_02",
+        "title": "Cat Sniffs Latte",
+        "displayName": "Latte Cat",
+        "levelRange": [
+          27,
+          40
+        ],
+        "background": "newtheme/bg/chapter2/2",
+        "puzzleId": "ch2_02_cat_sniffs_latte",
+        "puzzleResource": "config/beads/ch2_02_cat_sniffs_latte",
+        "helperElement": "咖啡杯"
+      },
+      {
+        "id": "ch2_03",
+        "title": "Cat Eats Dried Fish",
+        "displayName": "Dried Fish",
+        "levelRange": [
+          41,
+          54
+        ],
+        "background": "newtheme/bg/chapter2/3",
+        "puzzleId": "ch2_03_cat_eats_dried_fish",
+        "puzzleResource": "config/beads/ch2_03_cat_eats_dried_fish",
+        "helperElement": "小鱼干"
+      },
+      {
+        "id": "ch2_04",
+        "title": "Cat Kneads Cushion",
+        "displayName": "Kneading Cat",
+        "levelRange": [
+          55,
+          67
+        ],
+        "background": "newtheme/bg/chapter2/4",
+        "puzzleId": "ch2_04_cat_kneads_cushion",
+        "puzzleResource": "config/beads/ch2_04_cat_kneads_cushion",
+        "helperElement": "坐垫"
+      },
+      {
+        "id": "ch2_05",
+        "title": "Cat by Café Window",
+        "displayName": "Window Cat",
+        "levelRange": [
+          68,
+          80
+        ],
+        "background": "newtheme/bg/chapter2/5",
+        "puzzleId": "ch2_05_cat_by_cafe_window",
+        "puzzleResource": "config/beads/ch2_05_cat_by_cafe_window",
+        "helperElement": "窗框 / 灯串"
+      }
+    ]
+  },
+  {
+    "id": "chapter3",
+    "legacyChapterId": "sweden",
+    "title": "Chapter 3",
+    "name": "Night Market Snack",
+    "displayName": "雨后街角",
+    "levelRange": [
+      81,
+      160
+    ],
+    "unlockAfterLevel": 80,
+    "theme": {
+      "icon": "🌧️",
+      "accentColor": "#6D83B8",
+      "background": "newtheme/bg/chapter3/1"
+    },
+    "subchapters": [
+      {
+        "id": "ch3_01",
+        "title": "Cat Under Lanterns",
+        "displayName": "Lantern Cat",
+        "levelRange": [
+          81,
+          96
+        ],
+        "background": "newtheme/bg/chapter3/1",
+        "puzzleId": "ch3_01_cat_under_lanterns",
+        "puzzleResource": "config/beads/ch3_01_cat_under_lanterns",
+        "helperElement": "灯笼"
+      },
+      {
+        "id": "ch3_02",
+        "title": "Cat at Fish Stall",
+        "displayName": "Fish Stall",
+        "levelRange": [
+          97,
+          112
+        ],
+        "background": "newtheme/bg/chapter3/2",
+        "puzzleId": "ch3_02_cat_at_fish_stall",
+        "puzzleResource": "config/beads/ch3_02_cat_at_fish_stall",
+        "helperElement": "摊台 / 鱼干盘"
+      },
+      {
+        "id": "ch3_03",
+        "title": "Cat Grabs Fish",
+        "displayName": "Fish Grab",
+        "levelRange": [
+          113,
+          128
+        ],
+        "background": "newtheme/bg/chapter3/3",
+        "puzzleId": "ch3_03_cat_grabs_fish",
+        "puzzleResource": "config/beads/ch3_03_cat_grabs_fish",
+        "helperElement": "小鱼干 / 纸袋"
+      },
+      {
+        "id": "ch3_04",
+        "title": "Cat with Snack Bag",
+        "displayName": "Snack Bag",
+        "levelRange": [
+          129,
+          144
+        ],
+        "background": "newtheme/bg/chapter3/4",
+        "puzzleId": "ch3_04_cat_with_snack_bag",
+        "puzzleResource": "config/beads/ch3_04_cat_with_snack_bag",
+        "helperElement": "小吃袋"
+      },
+      {
+        "id": "ch3_05",
+        "title": "Cat Behind Stall",
+        "displayName": "Behind Stall",
+        "levelRange": [
+          145,
+          160
+        ],
+        "background": "newtheme/bg/chapter3/5",
+        "puzzleId": "ch3_05_cat_behind_stall",
+        "puzzleResource": "config/beads/ch3_05_cat_behind_stall",
+        "helperElement": "摊车 / 鱼骨"
+      }
+    ]
+  },
+  {
+    "id": "chapter4",
+    "legacyChapterId": "usa",
+    "title": "Chapter 4",
+    "name": "Sunny Beach Pawprints",
+    "displayName": "海边旅行",
+    "levelRange": [
+      161,
+      240
+    ],
+    "unlockAfterLevel": 160,
+    "theme": {
+      "icon": "🌊",
+      "accentColor": "#68B6A5",
+      "background": "newtheme/bg/chapter4/1"
+    },
+    "subchapters": [
+      {
+        "id": "ch4_01",
+        "title": "Cat Runs on Sand",
+        "displayName": "Sand Runner",
+        "levelRange": [
+          161,
+          176
+        ],
+        "background": "newtheme/bg/chapter4/1",
+        "puzzleId": "ch4_01_cat_runs_on_sand",
+        "puzzleResource": "config/beads/ch4_01_cat_runs_on_sand",
+        "helperElement": "爪印"
+      },
+      {
+        "id": "ch4_02",
+        "title": "Cat Digs Sand",
+        "displayName": "Sand Digger",
+        "levelRange": [
+          177,
+          192
+        ],
+        "background": "newtheme/bg/chapter4/2",
+        "puzzleId": "ch4_02_cat_digs_sand",
+        "puzzleResource": "config/beads/ch4_02_cat_digs_sand",
+        "helperElement": "沙堆 / 贝壳"
+      },
+      {
+        "id": "ch4_03",
+        "title": "Cat and Beach Ball",
+        "displayName": "Beach Ball",
+        "levelRange": [
+          193,
+          208
+        ],
+        "background": "newtheme/bg/chapter4/3",
+        "puzzleId": "ch4_03_cat_and_beach_ball",
+        "puzzleResource": "config/beads/ch4_03_cat_and_beach_ball",
+        "helperElement": "沙滩球"
+      },
+      {
+        "id": "ch4_04",
+        "title": "Cat Under Umbrella",
+        "displayName": "Umbrella Cat",
+        "levelRange": [
+          209,
+          224
+        ],
+        "background": "newtheme/bg/chapter4/4",
+        "puzzleId": "ch4_04_cat_under_umbrella",
+        "puzzleResource": "config/beads/ch4_04_cat_under_umbrella",
+        "helperElement": "遮阳伞 / 饮料"
+      },
+      {
+        "id": "ch4_05",
+        "title": "Cat Jumps Wave",
+        "displayName": "Wave Jumper",
+        "levelRange": [
+          225,
+          240
+        ],
+        "background": "newtheme/bg/chapter4/5",
+        "puzzleId": "ch4_05_cat_jumps_wave",
+        "puzzleResource": "config/beads/ch4_05_cat_jumps_wave",
+        "helperElement": "浪花"
+      }
+    ]
+  },
+  {
+    "id": "chapter5",
+    "legacyChapterId": "rainy_alley",
+    "title": "Chapter 5",
+    "name": "Rainy Alley Cat",
+    "displayName": "雨巷暖光",
+    "levelRange": [
+      241,
+      320
+    ],
+    "unlockAfterLevel": 240,
+    "theme": {
+      "icon": "☔",
+      "accentColor": "#7A8EA8",
+      "background": "newtheme/bg/chapter5/1"
+    },
+    "subchapters": [
+      {
+        "id": "ch5_01",
+        "title": "Cat Steps in Puddle",
+        "displayName": "Puddle Cat",
+        "levelRange": [
+          241,
+          256
+        ],
+        "background": "newtheme/bg/chapter5/1",
+        "puzzleId": "ch5_01_cat_steps_in_puddle",
+        "puzzleResource": "config/beads/ch5_01_cat_steps_in_puddle",
+        "helperElement": "水坑"
+      },
+      {
+        "id": "ch5_02",
+        "title": "Cat in Cardboard Box",
+        "displayName": "Box Cat",
+        "levelRange": [
+          257,
+          272
+        ],
+        "background": "newtheme/bg/chapter5/2",
+        "puzzleId": "ch5_02_cat_in_cardboard_box",
+        "puzzleResource": "config/beads/ch5_02_cat_in_cardboard_box",
+        "helperElement": "纸箱"
+      },
+      {
+        "id": "ch5_03",
+        "title": "Cat Holds Umbrella",
+        "displayName": "Umbrella Holder",
+        "levelRange": [
+          273,
+          288
+        ],
+        "background": "newtheme/bg/chapter5/3",
+        "puzzleId": "ch5_03_cat_holds_umbrella",
+        "puzzleResource": "config/beads/ch5_03_cat_holds_umbrella",
+        "helperElement": "雨伞"
+      },
+      {
+        "id": "ch5_04",
+        "title": "Cat Eats Fish in Rain",
+        "displayName": "Rain Fish",
+        "levelRange": [
+          289,
+          304
+        ],
+        "background": "newtheme/bg/chapter5/4",
+        "puzzleId": "ch5_04_cat_eats_fish_in_rain",
+        "puzzleResource": "config/beads/ch5_04_cat_eats_fish_in_rain",
+        "helperElement": "屋檐 / 鱼干"
+      },
+      {
+        "id": "ch5_05",
+        "title": "Cat Finds Warm Light",
+        "displayName": "Warm Light",
+        "levelRange": [
+          305,
+          320
+        ],
+        "background": "newtheme/bg/chapter5/5",
+        "puzzleId": "ch5_05_cat_finds_warm_light",
+        "puzzleResource": "config/beads/ch5_05_cat_finds_warm_light",
+        "helperElement": "窗光 / 脚印"
+      }
+    ]
+  }
+]

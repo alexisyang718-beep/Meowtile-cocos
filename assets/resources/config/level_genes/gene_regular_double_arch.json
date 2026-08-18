@@ -1,0 +1,50 @@
+{
+  "id": "gene_regular_double_arch",
+  "name": "常规双拱",
+  "stage": "regular",
+  "gridSize": "7x8",
+  "seedStart": 4000,
+  "heightWeights": {
+    "h1": 0.52,
+    "h2": 0.36,
+    "h3": 0.12
+  },
+  "mechanicBlacklist": [
+    "piggy",
+    "conveyor",
+    "dropChute",
+    "skyscraper",
+    "cover"
+  ],
+  "allowedMechanics": [],
+  "iconPoolSize": 9,
+  "redundancyK": 1.15,
+  "interferencePattern": "double_arch",
+  "breathingCorridor": {
+    "type": "dual_gap",
+    "width": 1,
+    "strength": 0.9
+  },
+  "openingFlow": {
+    "immediateMatches": [
+      2,
+      3
+    ],
+    "candidatePairs": [
+      4,
+      6
+    ],
+    "firstStepsChain": 4,
+    "softGatesAfterGroups": [
+      4,
+      9
+    ]
+  },
+  "validatorThresholds": {
+    "dfsDepthLimit": 18,
+    "minOpeningMatches": 2,
+    "maxOpeningMatches": 3,
+    "minBranchingFactor": 2.0,
+    "maxBottleneckDepth": 4
+  }
+}

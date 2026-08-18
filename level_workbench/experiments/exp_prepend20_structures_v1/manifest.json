@@ -1,0 +1,31 @@
+{
+  "id": "exp_prepend20_structures_v1",
+  "updatedAt": "2026-07-06T20:37:36.328913",
+  "purpose": "20 distinct board-structure test levels, with every layer split clearly in preview. Original shifted levels 21-340 are untouched.",
+  "range": [
+    1,
+    20
+  ],
+  "templateNames": [
+    "soft_diamond",
+    "corner_cut_cluster",
+    "double_island_bridge",
+    "local_tower_6",
+    "x_shape",
+    "ring_hole",
+    "diagonal_stair",
+    "butterfly",
+    "twin_towers",
+    "s_curve",
+    "hourglass",
+    "cross_plus",
+    "crescent",
+    "zigzag",
+    "checker_holes",
+    "wide_base",
+    "twin_diamonds",
+    "spiral",
+    "star",
+    "mixed_large"
+  ]
+}

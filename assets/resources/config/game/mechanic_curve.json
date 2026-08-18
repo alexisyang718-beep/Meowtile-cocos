@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "status": "disabled_in_levels",
+  "description": "Special mechanics are kept in code/configurator for future iteration, but no level should currently ship with any special mechanic enabled.",
+  "currentPolicy": {
+    "enabledInLevels": [],
+    "keptForFuture": [
+      "goldenTileCount",
+      "crowSnatchCount",
+      "slotLockRight"
+    ],
+    "disabledUntilRedesigned": [
+      "coverTileCount",
+      "piggies",
+      "conveyors",
+      "dropChutes",
+      "skyscrapers"
+    ]
+  },
+  "reasons": [
+    "Golden reward currently has click-blocking edge cases when stacked with other tiles.",
+    "Drop chutes and conveyors have tile icon scaling/stretching inconsistencies.",
+    "Piggies can remain after cover tiles are cleared in some layouts.",
+    "Some combined-mechanic levels can produce tiles that appear clickable but do not respond."
+  ],
+  "notes": [
+    "All level-XXX.json files should omit the mechanics field while this policy is active.",
+    "Do not re-apply generated mechanic curves until the kept mechanics are QA-fixed and explicitly approved.",
+    "The three retained candidate mechanics are golden reward, right slot lock, and crow snatch, but they are not assigned to any level now."
+  ]
+}
