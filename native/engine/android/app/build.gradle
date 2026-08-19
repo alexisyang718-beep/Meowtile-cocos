@@ -110,6 +110,12 @@ dependencies {
     implementation fileTree(dir: "${COCOS_ENGINE_PATH}/cocos/platform/android/java/libs", include: ['*.jar'])
     implementation project(':libservice')
     implementation project(':libcocos')
+    // Firebase Analytics(手动初始化模式,无 google-services 插件):
+    // firebase-analytics 要求 minSdk>=23,构建产物 gradle.properties 的 PROP_MIN_SDK_VERSION 需改为 23。
+    implementation platform('com.google.firebase:firebase-bom:34.13.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    // Firebase play-services 需要 PendingIntentCompat,显式锁 androidx.core 版本(参考 roblock-cocos 同款修复)
+    implementation 'androidx.core:core:1.13.0'
     if (Boolean.parseBoolean(PROP_ENABLE_INPUTSDK)) {
         implementation 'com.google.android.libraries.play.games:inputmapping:1.1.0-beta'
         implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.10"

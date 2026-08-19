@@ -3,8 +3,19 @@ import { ScreenAdapter } from '../common/ScreenAdapter';
 import { bindPressScale, colorFromHex, createLabel, createNode, drawRect, loadSpriteFrameFromResources } from '../common/UiFactory';
 import { BeadRewardModal } from '../../meta/beads/BeadRewardModal';
 import { BeadRewardContext } from '../../meta/beads/BeadPuzzleTypes';
+import { Analytics } from '../../core/analytics/AnalyticsManager';
+import { ProgressRepository } from '../../data/repositories/ProgressRepository';
 
 const { ccclass } = _decorator;
+
+/** ResultView 埋点辅助:读取当前已通关最高关 */
+function loadMaxCleared(): number {
+    try {
+        return ProgressRepository.load().maxClearedLevelId;
+    } catch {
+        return 0;
+    }
+}
 
 export interface ResultWinData {
     levelId?: number;
@@ -186,6 +197,10 @@ export class ResultView extends Component {
             this.showBeadReward(handlers);
             return;
         }
+        // 埋点:成功弹窗 Next → 下一关(source=result_next)
+        if (handlers.winData?.nextLevelId != null) {
+            Analytics.trackStartLevelClick(handlers.winData.nextLevelId, 'result_next', loadMaxCleared());
+        }
         handlers.onNext();
     }
 
@@ -195,6 +210,18 @@ export class ResultView extends Component {
             console.warn('[ResultView] showBeadReward: no reward');
             return;
         }
+        // 埋点:拼豆奖励弹窗曝光(level_reward);chapter_id 取 puzzleId 前两段(ch1_02_cat → ch1_02)
+        Analytics.trackBeadPopupShow({
+            levelId: reward.levelId,
+            chapterId: reward.puzzle.chapterId ?? reward.puzzle.id.split('_').slice(0, 2).join('_'),
+            subchapterId: reward.subchapter.id,
+            puzzleId: reward.puzzle.id,
+            popupType: 'level_reward',
+            progressPercent: reward.completedCellCount != null && reward.puzzle.cells.length > 0
+                ? Number((reward.completedCellCount / reward.puzzle.cells.length).toFixed(2))
+                : 0,
+            isSubchapterComplete: reward.isSubchapterComplete,
+        });
         console.log('[ResultView] showBeadReward: creating modal');
         this.setAuthoredVisible(false, false);
         let node = this.node.getChildByName('BeadReward');

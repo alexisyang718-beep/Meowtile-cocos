@@ -19,6 +19,18 @@ export class BeadProgressService {
         ProgressRepository.setBeadStartSeen(puzzleId);
     }
 
+    /** 已完成拼豆数(整张 completed)与拼豆总数(所有子章节),供 collection_open 上报。 */
+    static async getPuzzleStats(): Promise<{ completed: number; total: number }> {
+        const chapters = await MetaChapterRepository.loadAll();
+        const all = chapters.flatMap((chapter) => chapter.subchapters);
+        let completed = 0;
+        for (const subchapter of all) {
+            const record = ProgressRepository.getBeadPuzzleProgress(subchapter.puzzleId);
+            if (record.completed) completed += 1;
+        }
+        return { completed, total: all.length };
+    }
+
     static async claimLevelReward(levelId: LevelId): Promise<BeadRewardContext | null> {
         const subchapter = await MetaChapterRepository.findSubchapterByLevel(levelId);
         if (!subchapter) return null;

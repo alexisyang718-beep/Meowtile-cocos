@@ -35,6 +35,14 @@ import android.content.res.Configuration;
 import com.cocos.service.SDKWrapper;
 import com.cocos.lib.CocosActivity;
 
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+import com.google.firebase.analytics.FirebaseAnalytics;
+
+import org.json.JSONObject;
+
+import java.util.Iterator;
+
 public class AppActivity extends CocosActivity {
     private static AppActivity activity;
 
@@ -60,6 +68,8 @@ public class AppActivity extends CocosActivity {
         // DO OTHER INITIALIZATION BELOW
         SDKWrapper.shared().init(this);
 
+        // Firebase Analytics 手动初始化(占位符未替换时自动跳过,不影响其他功能)
+        initFirebaseAnalytics();
     }
 
     @Override
@@ -143,5 +153,81 @@ public class AppActivity extends CocosActivity {
     public void onLowMemory() {
         SDKWrapper.shared().onLowMemory();
         super.onLowMemory();
+    }
+
+    // ===== Firebase Analytics(手动初始化模式) =====
+    // 三个值来自 /Users/ivan/Downloads/com.meowtile.game.json (Firebase 控制台 -> 项目设置 -> 你的 Android 应用):
+    //   client[1].api_key[0].current_key      -> FIREBASE_API_KEY
+    //   client[1].client_info.mobilesdk_app_id -> FIREBASE_APP_ID
+    //   project_info.project_id                -> FIREBASE_PROJECT_ID
+    private static final String FIREBASE_API_KEY = "AIzaSyCF5jtQQjNBKdYULXJiVv3hG4HJD_9VXIs";
+    private static final String FIREBASE_APP_ID = "1:124736202705:android:65cd65d1d862b8e41ca2f0"; // com.meowtile.game
+    private static final String FIREBASE_PROJECT_ID = "meowtile-7ebeb";
+
+    /** Firebase Analytics 实例;未成功初始化(占位符未替换)时保持 null,事件桥自动静默降级。 */
+    private static FirebaseAnalytics sFirebaseAnalytics;
+
+    private void initFirebaseAnalytics() {
+        if (FIREBASE_API_KEY.startsWith("REPLACE_WITH_")) {
+            // 占位符未替换,说明 Firebase 项目还未创建/配置,直接跳过,不影响其余功能。
+            android.util.Log.w("Firebase", "Firebase Analytics skipped: placeholder keys not replaced yet");
+            return;
+        }
+        try {
+            // res/values/strings.xml 已注入 google_app_id 等资源,FirebaseInitProvider 可能已自动初始化 DEFAULT;
+            // 已存在则直接复用,避免 "FirebaseApp name [DEFAULT] already exists" 冲突。
+            FirebaseApp app = null;
+            for (FirebaseApp existing : FirebaseApp.getApps(this)) {
+                if (FirebaseApp.DEFAULT_APP_NAME.equals(existing.getName())) {
+                    app = existing;
+                    break;
+                }
+            }
+            if (app == null) {
+                FirebaseOptions options = new FirebaseOptions.Builder()
+                        .setApiKey(FIREBASE_API_KEY)
+                        .setApplicationId(FIREBASE_APP_ID)
+                        .setProjectId(FIREBASE_PROJECT_ID)
+                        .build();
+                app = FirebaseApp.initializeApp(this, options);
+            }
+            if (app != null) {
+                sFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+            }
+        } catch (Throwable t) {
+            android.util.Log.w("Firebase", "initFirebaseAnalytics failed: " + t.getMessage());
+        }
+    }
+
+    /**
+     * Firebase Analytics 事件桥。
+     * Cocos JS 侧签名: ('com/cocos/game/AppActivity', 'firebaseOnEvent',
+     *                  '(Ljava/lang/String;Ljava/lang/String;)V', eventId, paramsJson)
+     */
+    public static void firebaseOnEvent(String eventId, String paramsJson) {
+        android.util.Log.i("TrackAudit", "sdk=firebase event=" + eventId + " params=" + paramsJson);
+        if (sFirebaseAnalytics == null || eventId == null || eventId.isEmpty()) return;
+        try {
+            final Bundle params = new Bundle();
+            JSONObject json = paramsJson == null ? new JSONObject() : new JSONObject(paramsJson);
+            Iterator<String> keys = json.keys();
+            while (keys.hasNext()) {
+                String key = keys.next();
+                Object value = json.get(key);
+                if (value instanceof Integer) {
+                    params.putInt(key, (Integer) value);
+                } else if (value instanceof Long) {
+                    params.putLong(key, (Long) value);
+                } else if (value instanceof Double) {
+                    params.putDouble(key, (Double) value);
+                } else {
+                    params.putString(key, String.valueOf(value));
+                }
+            }
+            sFirebaseAnalytics.logEvent(eventId, params);
+        } catch (Throwable t) {
+            // 埋点失败绝不影响游戏主流程
+            android.util.Log.w("Firebase", "firebaseOnEvent failed: " + t.getMessage());
+        }
     }
 }

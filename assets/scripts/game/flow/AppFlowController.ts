@@ -1,9 +1,11 @@
-import { _decorator, AudioClip, AudioSource, Button, Color, Component, Label, Node, Sprite, UITransform, Vec3, director, game, resources } from 'cc';
+import { _decorator, AudioClip, AudioSource, Button, Color, Component, Game, Label, Node, Sprite, UITransform, Vec3, director, game, resources } from 'cc';
 import { APP_VERSION } from '../../core/Constants';
 import { EventKeys } from '../../core/EventKeys';
 import { LevelId } from '../../core/Types';
 import { ChapterRepository } from '../../data/repositories/ChapterRepository';
 import { ProgressRepository } from '../../data/repositories/ProgressRepository';
+import { Analytics } from '../../core/analytics/AnalyticsManager';
+import { isNewPlayerFlag } from '../../core/analytics/PlayerIdentityRuntime';
 import { ChapterModel } from '../../data/models/ChapterModel';
 import { HomeView } from '../../ui/home/HomeView';
 import { LevelSelectView } from '../../ui/level-select/LevelSelectView';
@@ -98,10 +100,29 @@ export class AppFlowController extends Component {
 
     protected onEnable(): void {
         ScreenAdapter.onResize(this.handleResize, this);
+        // 埋点:退后台/关闭时结束会话(同一 session 只报一次)
+        game.on(Game.EVENT_HIDE, this.onAppHide, this);
+        game.on(Game.EVENT_SHOW, this.onAppShow, this);
     }
 
     protected onDisable(): void {
         ScreenAdapter.offResize(this.handleResize, this);
+        game.off(Game.EVENT_HIDE, this.onAppHide, this);
+        game.off(Game.EVENT_SHOW, this.onAppShow, this);
+    }
+
+    /** 退后台:局内未结算补报 level_quit(quit_source=app_background),再报 session_end */
+    private onAppHide(): void {
+        if (this.gameFlow) {
+            this.gameFlow.notifyReturnHome('app_background');
+        }
+        Analytics.trackSessionEnd();
+        Analytics.startSession();
+    }
+
+    /** 回前台:开启新会话(app 已恢复,冷启动事件由 native 侧按需补发) */
+    private onAppShow(): void {
+        Analytics.trackAppOpen(isNewPlayerFlag(), ProgressRepository.load().maxClearedLevelId);
     }
 
     protected start(): void {
@@ -286,6 +307,9 @@ export class AppFlowController extends Component {
         // 监听全局设置/商城入口
         director.on(EventKeys.AppOpenSettings, this.openSettings, this);
         director.on(EventKeys.AppOpenShop, this.openShop, this);
+        // 埋点:会话开始 + app_open(首次启动判定 + 当前最高通关)
+        Analytics.startSession();
+        Analytics.trackAppOpen(isNewPlayerFlag(), ProgressRepository.load().maxClearedLevelId);
         await this.showLoading();
         // 预加载章节，避免首次进 Map 时白屏；必须放在 Loading 可见之后，避免资源导入期间黑屏。
         await ChapterRepository.loadAll();
@@ -462,7 +486,10 @@ export class AppFlowController extends Component {
 
     private bindHome(): void {
         this.homeView.bind({
-            onPlay: (levelId) => { void this.requestStartLevel(levelId); },
+            onPlay: (levelId) => {
+                Analytics.trackStartLevelClick(levelId, 'home', ProgressRepository.load().maxClearedLevelId);
+                void this.requestStartLevel(levelId);
+            },
             onOpenMap: () => this.goMap(),
             onOpenCollections: () => this.goCollections(),
             onOpenSettings: () => this.openSettings(),
@@ -474,7 +501,10 @@ export class AppFlowController extends Component {
     private bindMap(): void {
         this.mapView.bind({
             onBack: () => this.goHome(),
-            onSelectLevel: (levelId) => { void this.requestStartLevel(levelId); },
+            onSelectLevel: (levelId) => {
+                Analytics.trackStartLevelClick(levelId, 'map', ProgressRepository.load().maxClearedLevelId);
+                void this.requestStartLevel(levelId);
+            },
             onOpenChapterStart: (chapterId) => { void this.goChapterStart(chapterId); },
         });
     }
@@ -496,6 +526,13 @@ export class AppFlowController extends Component {
 
     private async goHome(): Promise<void> {
         this.currentScene = 'home';
+        // 从局内回首页时补报会话结束(本关未结算则补报 level_quit,由 gameFlow 内部处理);
+        // 仅当存在活跃对局时才算一个完整会话,避免 boot() 首次进入误切会话
+        const hadActiveGame = this.gameFlow?.notifyReturnHome() ?? false;
+        if (hadActiveGame) {
+            Analytics.trackSessionEnd();
+            Analytics.startSession();
+        }
         // Loading 与 Home 共用同一首 BGM：从 loading 进 home 时继续播放，不重开。
         // 如果是从局内回 Home，局内 BGM 已停，此处会恢复 Home BGM。
         this.playHomeBgm(false);
@@ -517,6 +554,8 @@ export class AppFlowController extends Component {
             const progress = ProgressRepository.load();
             nextLevelId = Math.max(1, Math.min(AppFlowController.HOME_LEVEL_MAX, progress.maxClearedLevelId + 1));
         }
+        // 埋点:首页曝光(带当前应玩关卡与已通关最高关)
+        Analytics.trackHomeShow(nextLevelId, ProgressRepository.load().maxClearedLevelId);
         this.homeView.show(nextLevelId);
     }
 
@@ -549,6 +588,8 @@ export class AppFlowController extends Component {
     private async goChapterStart(chapterId: string): Promise<void> {
         const chapter = (await ChapterRepository.findById(chapterId)) ?? null;
         if (!chapter) return;
+        // 埋点:章节入口进入起始关(source=map)
+        Analytics.trackStartLevelClick(chapter.levelRange[0], 'map', ProgressRepository.load().maxClearedLevelId);
         await this.requestStartLevel(chapter.levelRange[0]);
     }
 
@@ -562,6 +603,14 @@ export class AppFlowController extends Component {
 
     private async goCollections(): Promise<void> {
         this.currentScene = 'collections';
+        // 埋点:收藏页打开(P1)
+        const beadStats = await BeadProgressService.getPuzzleStats();
+        Analytics.trackCollectionOpen({
+            source: 'home',
+            completedPuzzleCount: beadStats.completed,
+            totalPuzzleCount: beadStats.total,
+            maxClearedLevelId: ProgressRepository.load().maxClearedLevelId,
+        });
         this.gameFlow.teardown();
         this.loadingRoot.active = false;
         this.gameRoot.active = false;
@@ -593,13 +642,25 @@ export class AppFlowController extends Component {
         this.gameRoot.active = false;
         this.hideChapterPages();
         this.beadStartRoot.active = true;
+        // 埋点:拼豆弹窗曝光(subchapter_start);chapter_id 取 puzzleId 前两段(ch1_02_cat → ch1_02)
+        const beadChapterId = context.subchapter.puzzleId.split('_').slice(0, 2).join('_');
+        Analytics.trackBeadPopupShow({
+            levelId,
+            chapterId: beadChapterId,
+            subchapterId: context.subchapter.id,
+            puzzleId: context.subchapter.puzzleId,
+            popupType: 'subchapter_start',
+        });
         this.beadStartModal.show({
             mode: 'start',
+            levelId,
             subchapter: context.subchapter,
             puzzle: context.puzzle,
             visibleGroupIds: [],
             buttonText: 'Start',
             onAction: () => {
+                // 埋点:bead_popup_click 由 BeadRewardModal 按钮统一上报(action=start)
+                Analytics.trackStartLevelClick(levelId, 'bead_next', ProgressRepository.load().maxClearedLevelId);
                 BeadProgressService.markStartSeen(context.subchapter.puzzleId);
                 this.beadStartModal.hide();
                 this.beadStartRoot.active = false;

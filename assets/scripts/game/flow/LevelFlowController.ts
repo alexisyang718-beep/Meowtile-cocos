@@ -13,6 +13,8 @@ import { ResolvedLevelTheme, ShakeLevel } from '../../data/models/LevelThemeMode
 import { TileRuntimeModel } from '../../data/models/TileModel';
 import { getMatchKey } from '../../core/TileMatchGroup';
 import { Haptic } from '../../core/HapticManager';
+import { Analytics } from '../../core/analytics/AnalyticsManager';
+import type { AttemptContext } from '../../core/analytics/AnalyticsManager';
 import { BoardManager } from '../board/BoardManager';
 import { SlotManager, type SlotAddResult } from '../slot/SlotManager';
 import { ConveyorManager } from '../conveyor/ConveyorManager';
@@ -82,6 +84,8 @@ export class LevelFlowController extends Component {
     private onReturnHome: (() => void) | null = null;
     private autoBoot = true;
     private resultTask: (() => void) | null = null;
+    /** 当前关卡尝试上下文(埋点用;level_start 生成,result/quit 结算) */
+    private currentAttempt: AttemptContext | null = null;
 
     protected onEnable(): void {
         ScreenAdapter.onResize(this.handleResize, this);
@@ -201,6 +205,8 @@ export class LevelFlowController extends Component {
         this.applyLevelMechanicsBeforeBoard(level);
 
         this.session.start(level, boosters);
+        // 埋点:关卡开始(生成 attempt_id/attempt_index,后续 result/restart/quit 复用)
+        this.currentAttempt = Analytics.trackLevelStart(level.id, level.chapterId ?? null);
         this.result.hide();
         this.slot.configureTheme(
             this.currentTheme.tileBase,
@@ -584,7 +590,9 @@ export class LevelFlowController extends Component {
         });
     }
 
-    async restartLevel(): Promise<GameSnapshot> {
+    async restartLevel(source: 'fail_popup' | 'pause' | 'unknown' = 'fail_popup'): Promise<GameSnapshot> {
+        // 埋点:重开(重开前上报当前 duration/moves)
+        Analytics.trackLevelRestart(this.currentAttempt, this.session.moves, source);
         this.audio?.play('shuffle', 0.9);
         const levelId = this.session.level?.id ?? GAME_CONFIG.defaultLevelId;
         return this.startLevel(levelId);
@@ -593,6 +601,14 @@ export class LevelFlowController extends Component {
     backToHome(reason: string = 'unknown'): GameSnapshot {
         console.warn('[LevelFlowController] backToHome called, reason:', reason);
         console.trace('[LevelFlowController] backToHome stack');
+        // 埋点:局内退出(仅当关卡未结算时上报;已 win/fail 的尝试不重复报 quit)
+        if (this.session.state === GameState.Playing || this.session.state === GameState.Loading) {
+            const quitSource = reason.startsWith('FailPopup') || reason.startsWith('SuccessPopup')
+                ? 'home_button'
+                : 'back_button';
+            Analytics.trackLevelQuit(this.currentAttempt, this.session.moves, quitSource);
+        }
+        this.currentAttempt = null;
         this.session.state = GameState.Home;
         this.syncSnapshot('Back to home');
         // v1.5：若外层 AppFlow 接管，转交它做场景切换；否则保持内置逻辑（向后兼容）
@@ -600,6 +616,20 @@ export class LevelFlowController extends Component {
             this.onReturnHome();
         }
         return this.getSnapshot();
+    }
+
+    /**
+     * AppFlowController 回首页/退后台时调用:若本关未结算,补报 level_quit 并结束会话。
+     * @param quitSource 退出来源:回首页=home_button,退后台=app_background
+     * 返回是否存在活跃对局(供上层决定是否切会话)。
+     */
+    notifyReturnHome(quitSource: 'home_button' | 'app_background' = 'home_button'): boolean {
+        const hasActive = this.session.state === GameState.Playing || this.session.state === GameState.Loading;
+        if (hasActive) {
+            Analytics.trackLevelQuit(this.currentAttempt, this.session.moves, quitSource);
+        }
+        this.currentAttempt = null;
+        return hasActive;
     }
 
     selectTile(tileId: TileId): TileSelectionResult {
@@ -729,6 +759,10 @@ export class LevelFlowController extends Component {
     private completeLevel(win: boolean): void {
         this.cancelResultTask();
         this.session.setResult(win);
+        // 埋点:关卡结果(win/fail 合并一个事件;fail_reason=slot_full 由槽满触发)
+        const failReason = win ? '' : (this.session.state === GameState.Lose ? 'slot_full' : 'unknown');
+        Analytics.trackLevelResult(this.currentAttempt, win, this.session.moves, failReason);
+        this.currentAttempt = null;
         this.syncSnapshot(win ? 'Level cleared.' : 'Tray is full.');
         director.emit(win ? EventKeys.LevelWin : EventKeys.LevelLose, this.session.level?.id ?? null);
 
@@ -909,7 +943,7 @@ export class LevelFlowController extends Component {
         this.hud = hudNode.addComponent(HudView);
         this.hud.bind({
             onBack: () => this.backToHome('HUD back button'),
-            onRestart: () => { void this.restartLevel(); },
+            onRestart: () => { void this.restartLevel('pause'); },
             onTileDebugSelect: (tileId) => this.selectTile(tileId),
             onBooster: (type) => this.useBooster(type),
             onGotoLevel: (levelId) => { void this.startLevel(Math.max(1, levelId)); },
@@ -1034,7 +1068,7 @@ export class LevelFlowController extends Component {
         this.hud = hudNode.getComponent(HudView) ?? hudNode.addComponent(HudView);
         this.hud.bind({
             onBack: () => this.backToHome('HUD back button'),
-            onRestart: () => { void this.restartLevel(); },
+            onRestart: () => { void this.restartLevel('pause'); },
             onTileDebugSelect: (tileId) => this.selectTile(tileId),
             onBooster: (type) => this.useBooster(type),
             onGotoLevel: (levelId) => { void this.startLevel(Math.max(1, levelId)); },

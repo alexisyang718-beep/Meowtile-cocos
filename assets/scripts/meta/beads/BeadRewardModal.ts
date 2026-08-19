@@ -1,12 +1,23 @@
 import { _decorator, AudioClip, AudioSource, BlockInputEvents, Button, Color, Component, EventTouch, Graphics, Label, Node, resources, Sprite, tween, UIOpacity, UITransform, Vec3 } from 'cc';
 import { ScreenAdapter } from '../../ui/common/ScreenAdapter';
 import { Haptic } from '../../core/HapticManager';
+import { Analytics } from '../../core/analytics/AnalyticsManager';
+import { ProgressRepository } from '../../data/repositories/ProgressRepository';
 import { bindPressScale, colorFromHex, createLabel, createNode, drawRect, loadSpriteFrameFromResources } from '../../ui/common/UiFactory';
 import { MetaSubchapterConfig } from '../MetaChapterRepository';
 import { BeadCell, BeadFillStyle, BeadPuzzleData } from './BeadPuzzleTypes';
 import { BeadPuzzleView } from './BeadPuzzleView';
 
 const { ccclass } = _decorator;
+
+/** BeadRewardModal 埋点辅助:读取当前已通关最高关 */
+function loadMaxClearedForBead(): number {
+    try {
+        return ProgressRepository.load().maxClearedLevelId;
+    } catch {
+        return 0;
+    }
+}
 
 const PANEL_BASE_WIDTH = 920;
 const PANEL_BASE_HEIGHT = 1260;
@@ -152,6 +163,27 @@ export class BeadRewardModal extends Component {
         buttonLabel.node.setSiblingIndex(button.children.length - 1);
         button.on(Node.EventType.TOUCH_END, () => {
             if (!buttonComponent.interactable) return;
+            // 埋点:拼豆弹窗按钮点击(action 按弹窗模式/完成态区分)
+            const clickAction = options.mode === 'start'
+                ? 'start'
+                : (options.isSubchapterComplete ? 'next' : 'continue');
+            const chapterId = options.subchapter.puzzleId.split('_').slice(0, 2).join('_');
+            Analytics.trackBeadPopupClick({
+                levelId: options.levelId ?? null,
+                chapterId,
+                subchapterId: options.subchapter.id,
+                puzzleId: options.subchapter.puzzleId,
+                popupType: options.mode === 'start' ? 'subchapter_start' : 'level_reward',
+                action: clickAction,
+                progressPercent: options.completedCellCount != null && options.puzzle?.cells?.length
+                    ? Number((options.completedCellCount / options.puzzle.cells.length).toFixed(2))
+                    : 0,
+                isSubchapterComplete: options.isSubchapterComplete,
+            });
+            // 埋点:拼豆 Next → 下一关(source=bead_next;仅 reward 模式且子章节完成时)
+            if (options.mode === 'reward' && options.isSubchapterComplete && options.levelId != null) {
+                Analytics.trackStartLevelClick(options.levelId + 1, 'bead_next', loadMaxClearedForBead());
+            }
             options.onAction();
         });
 

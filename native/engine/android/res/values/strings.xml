@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Firebase Analytics 手动初始化模式的隐藏依赖:
+     FirebaseAnalytics 底层不从运行时 FirebaseOptions 读 google_app_id,
+     而是读这些 Android 字符串资源(正常由 google-services.json + gradle 插件生成)。
+     值取自 com.meowtile.game.json(project: meowtile-7ebeb, 包名 com.meowtile.game),
+     与 AppActivity.java 常量一致。
+     注意: 这里不能定义 app_name(与 build/android/proj/res/values/strings.xml 重复会报 Duplicate resources)。 -->
 <resources>
-    <string name="app_name" translatable="false">MeowTile</string>
+    <string name="google_app_id">1:124736202705:android:65cd65d1d862b8e41ca2f0</string>
+    <string name="google_api_key">AIzaSyCF5jtQQjNBKdYULXJiVv3hG4HJD_9VXIs</string>
+    <string name="google_crash_reporting_api_key">AIzaSyCF5jtQQjNBKdYULXJiVv3hG4HJD_9VXIs</string>
+    <string name="project_id">meowtile-7ebeb</string>
+    <string name="gcm_defaultSenderId">124736202705</string>
 </resources>
