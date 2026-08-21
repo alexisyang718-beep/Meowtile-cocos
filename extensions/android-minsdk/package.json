@@ -1,0 +1,11 @@
+{
+  "name": "android-minsdk",
+  "version": "1.0.0",
+  "description": "Android 构建后自动将 PROP_MIN_SDK_VERSION 提升至 23（Firebase Analytics 要求）",
+  "main": "main.js",
+  "contributions": {
+    "builder": {
+      "hooks": "./hooks.js"
+    }
+  }
+}
